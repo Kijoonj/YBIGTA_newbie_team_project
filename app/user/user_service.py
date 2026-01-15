@@ -8,12 +8,10 @@ class UserService:
     def login(self, user_login: UserLogin) -> User:
         """
         Searches user from db by matching e-mail address. 
-        Checks:
-        1. if the user exists
-        2. if the pswd matches
-        If so returns the user
+        1) If the user does not exist or password doesn't match, raise error
+        2) Otherwise login and return the user
         """
-        user : User = self.repo.get_user_by_email(user_login.email)
+        user : User|None = self.repo.get_user_by_email(user_login.email)
         
         if user is None:
             raise ValueError("User not Found.")
@@ -31,7 +29,7 @@ class UserService:
         1) If user already exists, raise error
         2) Otherwise save and return the user
         """
-        existing_user : User = self.repo.get_user_by_email(new_user.email)
+        existing_user : User|None = self.repo.get_user_by_email(new_user.email)
         if existing_user:
             raise ValueError("User already Exists.")
 
@@ -45,7 +43,7 @@ class UserService:
         1) If user does not exist, raise a error 
         2) Otherwise, delete and return the user
         """        
-        delete_user : User = self.repo.get_user_by_email(email)
+        delete_user : User|None = self.repo.get_user_by_email(email)
         if delete_user is None:
             raise ValueError("User not Found.")
         
@@ -59,7 +57,7 @@ class UserService:
         1) If user is not found, raise a error
         2) Otherwise update pswd and return the user
         """
-        update_user : User = self.repo.get_user_by_email(user_update.email)
+        update_user : User|None = self.repo.get_user_by_email(user_update.email)
         if update_user is None:
             raise ValueError("User not Found.")
         
