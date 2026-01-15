@@ -7,16 +7,18 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 50px;   /* 브라우저 기본 여백 추가 */
+            background-color: #f1f2f6;  /* 전체 배경색 회색 */
             text-align: center;
         }
         .container {
-            max-width: 600px;
-            margin: 0 auto;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 420px;   /* 로그인 폼에 맞는 너비 */
+            margin: 100px auto; /* 화면 중앙 배치 */
+            border: none;
+            border-radius: 12px;
+            padding: 30px;
+            background: white; /* 카드 느낌 추가*/
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* 입체감 추가*/
         }
         h1 {
             color: #333;
@@ -25,16 +27,25 @@
             margin: 20px 0;
         }
         input {
-            padding: 10px;
-            margin: 5px 0;
-            width: 80%;
-            font-size: 16px;
+            padding: 12px;
+            margin: 8px 0;
+            width: 90%;     /* 버튼과 폭 맞추기 */
+            font-size: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
         }
         button {
-            padding: 10px 20px;
-            margin: 10px;
-            font-size: 16px;
+            padding: 12px 24px;
+            margin: 10px 0;
+            font-size: 15px;
             cursor: pointer;
+            border: none;
+            border-radius: 6px;
+            background-color: #002366;  /* 메인 컬러 */
+            color: white;
+        }
+        button:hover {
+        background-color: #3867d6; /* 마우스 올렸을 때 */
         }
         .section {
             margin-bottom: 30px;
@@ -43,7 +54,7 @@
 </head>
 <body>
     <div class="container" id="login-screen">
-        <h1>User Management</h1>
+        <h1>🔐 User Management</h1>
         <div class="section" id="login-section">
             <h2>Login</h2>
             <form id="login-form">
