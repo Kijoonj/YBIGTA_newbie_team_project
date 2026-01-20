@@ -1,0 +1,136 @@
+2026-01-21 01:16:49,336 - RottenCrawler - INFO - Browser started successfully
+2026-01-21 01:16:49,337 - RottenCrawler - INFO - Accessing URL: https://www.rottentomatoes.com/m/interstellar_2014/reviews/all-audience
+2026-01-21 01:17:11,496 - RottenCrawler - INFO - Browser started successfully
+2026-01-21 01:17:11,497 - RottenCrawler - INFO - Accessing URL: https://www.rottentomatoes.com/m/interstellar_2014/reviews/all-audience
+2026-01-21 01:17:28,445 - RottenCrawler - INFO - Current reviews collected: 0
+2026-01-21 01:17:38,480 - RottenCrawler - INFO - Load More button not found (timeout)
+2026-01-21 01:17:38,481 - RottenCrawler - WARNING - No more 'Load More' button found
+2026-01-21 01:17:38,481 - RottenCrawler - INFO - Total reviews collected: 0
+2026-01-21 01:17:40,709 - RottenCrawler - INFO - Browser closed
+2026-01-21 01:17:40,709 - RottenCrawler - WARNING - No reviews to save
+2026-01-21 01:20:39,203 - RottenCrawler - INFO - Browser started successfully
+2026-01-21 01:20:39,203 - RottenCrawler - INFO - Accessing URL: https://www.rottentomatoes.com/m/interstellar_2014/reviews/all-audience
+2026-01-21 01:20:50,588 - RottenCrawler - INFO - Clicked cookie consent button
+2026-01-21 01:21:02,634 - RottenCrawler - INFO - Current reviews collected: 0
+2026-01-21 01:21:42,745 - RottenCrawler - INFO - Load More button not found with any selector
+2026-01-21 01:21:42,745 - RottenCrawler - WARNING - No more 'Load More' button found
+2026-01-21 01:21:42,745 - RottenCrawler - INFO - Total reviews collected: 0
+2026-01-21 01:21:45,032 - RottenCrawler - INFO - Browser closed
+2026-01-21 01:21:45,032 - RottenCrawler - WARNING - No reviews to save
+2026-01-21 01:23:20,787 - RottenCrawler - INFO - Browser started successfully
+2026-01-21 01:23:20,787 - RottenCrawler - INFO - Accessing URL: https://www.rottentomatoes.com/m/interstellar_2014/reviews/all-audience
+2026-01-21 01:23:28,842 - RottenCrawler - INFO - Clicked cookie consent button
+2026-01-21 01:23:31,866 - RottenCrawler - INFO - Page HTML saved to database\debug_page.html
+2026-01-21 01:23:41,928 - RottenCrawler - INFO - Selector '.review-card': found 0 elements
+2026-01-21 01:23:41,936 - RottenCrawler - INFO - Selector 'review-card': found 10 elements
+2026-01-21 01:23:41,943 - RottenCrawler - INFO - Selector '[class*="review"]': found 8 elements
+2026-01-21 01:23:41,950 - RottenCrawler - INFO - Selector 'drawer-more': found 10 elements
+2026-01-21 01:23:51,987 - RottenCrawler - INFO - Current reviews collected: 0
+2026-01-21 01:24:32,121 - RottenCrawler - INFO - Load More button not found with any selector
+2026-01-21 01:24:32,122 - RottenCrawler - WARNING - No more 'Load More' button found
+2026-01-21 01:24:32,122 - RottenCrawler - INFO - Total reviews collected: 0
+2026-01-21 01:24:34,390 - RottenCrawler - INFO - Browser closed
+2026-01-21 01:24:34,390 - RottenCrawler - WARNING - No reviews to save
+2026-01-21 01:26:13,512 - RottenCrawler - INFO - Browser started successfully
+2026-01-21 01:26:13,513 - RottenCrawler - INFO - Accessing URL: https://www.rottentomatoes.com/m/interstellar_2014/reviews/all-audience
+2026-01-21 01:26:22,073 - RottenCrawler - INFO - Clicked cookie consent button
+2026-01-21 01:26:25,116 - RottenCrawler - INFO - Page HTML saved to database\debug_page.html
+2026-01-21 01:26:35,152 - RottenCrawler - INFO - Selector '.review-card': found 0 elements
+2026-01-21 01:26:35,159 - RottenCrawler - INFO - Selector 'review-card': found 10 elements
+2026-01-21 01:26:35,166 - RottenCrawler - INFO - Selector '[class*="review"]': found 8 elements
+2026-01-21 01:26:35,173 - RottenCrawler - INFO - Selector 'drawer-more': found 10 elements
+2026-01-21 01:26:35,181 - RottenCrawler - INFO - Found 10 review cards
+2026-01-21 01:26:35,492 - RottenCrawler - INFO - Current reviews collected: 10
+2026-01-21 01:26:36,521 - RottenCrawler - INFO - Clicked 'Load More' button using selector: rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]
+2026-01-21 01:26:38,529 - RottenCrawler - INFO - Found 30 review cards
+2026-01-21 01:26:39,499 - RottenCrawler - INFO - Current reviews collected: 30
+2026-01-21 01:26:40,529 - RottenCrawler - INFO - Clicked 'Load More' button using selector: rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]
+2026-01-21 01:26:42,536 - RottenCrawler - INFO - Found 50 review cards
+2026-01-21 01:26:44,082 - RottenCrawler - INFO - Current reviews collected: 50
+2026-01-21 01:26:45,116 - RottenCrawler - INFO - Clicked 'Load More' button using selector: rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]
+2026-01-21 01:26:47,125 - RottenCrawler - INFO - Found 70 review cards
+2026-01-21 01:26:49,278 - RottenCrawler - INFO - Current reviews collected: 70
+2026-01-21 01:26:50,322 - RottenCrawler - INFO - Clicked 'Load More' button using selector: rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]
+2026-01-21 01:26:52,333 - RottenCrawler - INFO - Found 90 review cards
+2026-01-21 01:26:56,456 - RottenCrawler - INFO - Current reviews collected: 90
+2026-01-21 01:26:57,508 - RottenCrawler - INFO - Clicked 'Load More' button using selector: rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]
+2026-01-21 01:26:59,518 - RottenCrawler - INFO - Found 110 review cards
+2026-01-21 01:27:02,918 - RottenCrawler - INFO - Current reviews collected: 110
+2026-01-21 01:27:03,962 - RottenCrawler - INFO - Clicked 'Load More' button using selector: rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]
+2026-01-21 01:27:05,973 - RottenCrawler - INFO - Found 130 review cards
+2026-01-21 01:27:09,858 - RottenCrawler - INFO - Current reviews collected: 130
+2026-01-21 01:27:10,911 - RottenCrawler - INFO - Clicked 'Load More' button using selector: rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]
+2026-01-21 01:27:12,929 - RottenCrawler - INFO - Found 150 review cards
+2026-01-21 01:27:17,411 - RottenCrawler - INFO - Current reviews collected: 150
+2026-01-21 01:27:18,465 - RottenCrawler - INFO - Clicked 'Load More' button using selector: rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]
+2026-01-21 01:27:20,729 - RottenCrawler - INFO - Found 170 review cards
+2026-01-21 01:27:25,749 - RottenCrawler - INFO - Current reviews collected: 170
+2026-01-21 01:27:26,812 - RottenCrawler - INFO - Clicked 'Load More' button using selector: rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]
+2026-01-21 01:27:29,166 - RottenCrawler - INFO - Found 190 review cards
+2026-01-21 01:27:34,783 - RottenCrawler - INFO - Current reviews collected: 190
+2026-01-21 01:27:35,843 - RottenCrawler - INFO - Clicked 'Load More' button using selector: rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]
+2026-01-21 01:27:39,614 - RottenCrawler - INFO - Found 210 review cards
+2026-01-21 01:27:45,841 - RottenCrawler - INFO - Current reviews collected: 210
+2026-01-21 01:27:46,907 - RottenCrawler - INFO - Clicked 'Load More' button using selector: rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]
+2026-01-21 01:27:51,217 - RottenCrawler - INFO - Found 230 review cards
+2026-01-21 01:27:58,094 - RottenCrawler - INFO - Current reviews collected: 230
+2026-01-21 01:27:59,165 - RottenCrawler - INFO - Clicked 'Load More' button using selector: rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]
+2026-01-21 01:28:03,986 - RottenCrawler - INFO - Found 250 review cards
+2026-01-21 01:28:11,515 - RottenCrawler - INFO - Current reviews collected: 250
+2026-01-21 01:28:12,587 - RottenCrawler - INFO - Clicked 'Load More' button using selector: rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]
+2026-01-21 01:28:18,921 - RottenCrawler - INFO - Found 270 review cards
+2026-01-21 01:28:26,987 - RottenCrawler - INFO - Current reviews collected: 270
+2026-01-21 01:28:28,067 - RottenCrawler - INFO - Clicked 'Load More' button using selector: rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]
+2026-01-21 01:28:36,301 - RottenCrawler - INFO - Found 290 review cards
+2026-01-21 01:28:46,427 - RottenCrawler - INFO - Current reviews collected: 290
+2026-01-21 01:28:47,457 - RottenCrawler - INFO - Clicked 'Load More' button using selector: rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]
+2026-01-21 01:29:02,646 - RottenCrawler - INFO - Found 310 review cards
+2026-01-21 01:29:16,885 - RottenCrawler - INFO - Current reviews collected: 310
+2026-01-21 01:29:17,922 - RottenCrawler - INFO - Clicked 'Load More' button using selector: rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]
+2026-01-21 01:29:35,295 - RottenCrawler - INFO - Found 330 review cards
+2026-01-21 01:29:46,661 - RottenCrawler - INFO - Current reviews collected: 330
+2026-01-21 01:29:47,728 - RottenCrawler - INFO - Clicked 'Load More' button using selector: rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]
+2026-01-21 01:30:06,466 - RottenCrawler - INFO - Found 350 review cards
+2026-01-21 01:30:23,534 - RottenCrawler - INFO - Current reviews collected: 350
+2026-01-21 01:30:24,604 - RottenCrawler - INFO - Clicked 'Load More' button using selector: rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]
+2026-01-21 01:30:45,862 - RottenCrawler - INFO - Found 370 review cards
+2026-01-21 01:30:57,066 - RottenCrawler - INFO - Current reviews collected: 370
+2026-01-21 01:30:58,178 - RottenCrawler - INFO - Clicked 'Load More' button using selector: rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]
+2026-01-21 01:31:14,330 - RottenCrawler - INFO - Found 390 review cards
+2026-01-21 01:31:25,909 - RottenCrawler - INFO - Current reviews collected: 390
+2026-01-21 01:31:27,018 - RottenCrawler - INFO - Clicked 'Load More' button using selector: rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]
+2026-01-21 01:31:45,896 - RottenCrawler - INFO - Found 410 review cards
+2026-01-21 01:31:58,228 - RottenCrawler - INFO - Current reviews collected: 410
+2026-01-21 01:31:59,342 - RottenCrawler - INFO - Clicked 'Load More' button using selector: rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]
+2026-01-21 01:32:19,975 - RottenCrawler - INFO - Found 430 review cards
+2026-01-21 01:32:33,056 - RottenCrawler - INFO - Current reviews collected: 430
+2026-01-21 01:32:34,173 - RottenCrawler - INFO - Clicked 'Load More' button using selector: rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]
+2026-01-21 01:32:55,612 - RottenCrawler - INFO - Found 450 review cards
+2026-01-21 01:33:09,318 - RottenCrawler - INFO - Current reviews collected: 450
+2026-01-21 01:33:10,439 - RottenCrawler - INFO - Clicked 'Load More' button using selector: rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]
+2026-01-21 01:33:35,495 - RottenCrawler - INFO - Found 470 review cards
+2026-01-21 01:33:49,841 - RottenCrawler - INFO - Current reviews collected: 470
+2026-01-21 01:33:50,972 - RottenCrawler - INFO - Clicked 'Load More' button using selector: rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]
+2026-01-21 01:34:19,354 - RottenCrawler - INFO - Found 490 review cards
+2026-01-21 01:34:34,408 - RottenCrawler - INFO - Current reviews collected: 490
+2026-01-21 01:34:35,537 - RottenCrawler - INFO - Clicked 'Load More' button using selector: rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]
+2026-01-21 01:35:07,630 - RottenCrawler - INFO - Found 510 review cards
+2026-01-21 01:35:24,215 - RottenCrawler - INFO - Current reviews collected: 510
+2026-01-21 01:35:25,355 - RottenCrawler - INFO - Clicked 'Load More' button using selector: rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]
+2026-01-21 01:35:59,902 - RottenCrawler - INFO - Found 530 review cards
+2026-01-21 01:36:16,729 - RottenCrawler - INFO - Current reviews collected: 530
+2026-01-21 01:36:17,869 - RottenCrawler - INFO - Clicked 'Load More' button using selector: rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]
+2026-01-21 01:37:00,325 - RottenCrawler - INFO - Found 550 review cards
+2026-01-21 01:37:18,182 - RottenCrawler - INFO - Current reviews collected: 550
+2026-01-21 01:37:19,327 - RottenCrawler - INFO - Clicked 'Load More' button using selector: rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]
+2026-01-21 01:38:06,835 - RottenCrawler - INFO - Found 570 review cards
+2026-01-21 01:38:25,942 - RottenCrawler - INFO - Current reviews collected: 570
+2026-01-21 01:38:27,099 - RottenCrawler - INFO - Clicked 'Load More' button using selector: rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]
+2026-01-21 01:39:19,937 - RottenCrawler - INFO - Found 590 review cards
+2026-01-21 01:39:38,979 - RottenCrawler - INFO - Current reviews collected: 590
+2026-01-21 01:39:40,139 - RottenCrawler - INFO - Clicked 'Load More' button using selector: rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]
+2026-01-21 01:40:38,995 - RottenCrawler - INFO - Found 610 review cards
+2026-01-21 01:40:58,914 - RottenCrawler - INFO - Current reviews collected: 610
+2026-01-21 01:40:58,914 - RottenCrawler - INFO - Total reviews collected: 610
+2026-01-21 01:41:01,346 - RottenCrawler - INFO - Browser closed
+2026-01-21 01:41:01,397 - RottenCrawler - INFO - Saved 610 reviews to database\reviews_rotten.csv
