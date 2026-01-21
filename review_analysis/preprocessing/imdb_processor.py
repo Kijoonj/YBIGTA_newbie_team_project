@@ -27,7 +27,7 @@ class ImdbDataProcessor(BaseDataProcessor):
         
         # 텍스트 전처리
         self.df['content'] = self.df['content'].str.lower().str.replace(r'[^a-z0-9\s.?!]', '', regex=True)        
-        print("✅ Preprocessing & EDA Plots 완료")
+        print("Preprocessing & EDA Plots 완료")
 
 
     def feature_engineering(self):
@@ -46,7 +46,7 @@ class ImdbDataProcessor(BaseDataProcessor):
         tfidf_matrix = tfidf.fit_transform(self.df['content'])
         
         # 벡터화 결과 확인용 (선택 사항: 데이터프레임에 결합하거나 별도 저장)
-        print(f"✅ FE 완료 (TF-IDF 특징 수: {len(tfidf.get_feature_names_out())})")        
+        print(f"FE 완료 (TF-IDF 특징 수: {len(tfidf.get_feature_names_out())})")        
 
 
     def save_to_database(self):
