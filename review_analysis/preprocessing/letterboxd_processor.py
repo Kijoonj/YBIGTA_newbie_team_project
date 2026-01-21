@@ -1,11 +1,11 @@
 import os
 import re
-import pandas as pd
+import pandas as pd  # type: ignore
 import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns
+import seaborn as sns  # type: ignore
 from datetime import datetime
-from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer  # type: ignore
 from review_analysis.preprocessing.base_processor import BaseDataProcessor
 
 # 한글 폰트 설정 (Mac)

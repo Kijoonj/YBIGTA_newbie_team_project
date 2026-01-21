@@ -1,6 +1,6 @@
 import os
 import re
-import pandas as pd
+import pandas as pd  # type: ignore
 from time import sleep, time
 from datetime import datetime
 from selenium import webdriver
@@ -18,22 +18,17 @@ class letterboxdCrawler(BaseCrawler):
     Letterboxd 사이트에서 영화 리뷰 데이터를 수집하는 크롤러 클래스입니다.
     BaseCrawler 추상 클래스를 상속받아 구현되었습니다.
     
-    [최적화 버전]
-    - sleep 시간 최소화
-    - JavaScript 기반 일괄 추출로 DOM 접근 횟수 감소
-    - 불필요한 리소스 로딩 차단
-    - 페이지당 2분 → 10-15초로 단축
     """
 
     def __init__(self, output_dir: str):
         super().__init__(output_dir)
-        self.driver = None
-        self.reviews_data = []
+        self.driver: webdriver.Chrome | None = None
+        self.reviews_data: list[dict[str, str]] = []
         self.logger = setup_logger()
         self.target_url = "https://letterboxd.com/film/interstellar/reviews/by/activity/"
         self.max_retries = 3
         # 중복 체크용 set
-        self.seen_contents = set()
+        self.seen_contents: set[int] = set()
 
     def start_browser(self):
         """최적화된 브라우저 설정"""
