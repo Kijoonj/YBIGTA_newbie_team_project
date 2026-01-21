@@ -1,0 +1,2 @@
+﻿n_total,n_parsed_date_success,n_parsed_date_fail,n_rating_outliers,n_short_reviews,n_long_reviews_top1pct,rating_mean,rating_std,char_len_mean,char_len_std
+610,596,14,0,0,7,9.240983606557377,1.843452626442489,206.48688524590165,360.7219780888393
