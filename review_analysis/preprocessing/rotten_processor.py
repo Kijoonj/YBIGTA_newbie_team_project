@@ -15,7 +15,7 @@ class RottenProcessor(BaseDataProcessor):
         # CSV 파일 읽기
         self.df = pd.read_csv(self.input_path)
         
-        print(f"원본 데이터 크기: {len(self.df)}")
+       
         
         # 1. 결측치 처리
         self._handle_missing_values()
@@ -29,16 +29,15 @@ class RottenProcessor(BaseDataProcessor):
         # 4. 텍스트 데이터 전처리
         self._preprocess_text()
         
-        print(f"전처리 후 데이터 크기: {len(self.df)}")
+        
         
     def _handle_missing_values(self):
         """결측치 처리"""
-        # 필수 컬럼(date, rating, content)에 결측치가 있는 행 제거
+        
         initial_len = len(self.df)
         self.df = self.df.dropna(subset=['date', 'rating', 'content'])
         removed = initial_len - len(self.df)
-        if removed > 0:
-            print(f"결측치 제거: {removed}개 행")
+    
     
     def _process_dates(self):
         """날짜 형식 통일 및 정보 부족한 날짜 제거"""
@@ -48,32 +47,33 @@ class RottenProcessor(BaseDataProcessor):
                 return None
             
             date_str = str(date_str).strip()
-            today = datetime.now()
             
-            # 'h'로 끝나는 경우 (시간 단위) - 제거 대상
+            reference_date = datetime(2025, 1, 21)
+            
             if date_str.endswith('h'):
                 return None
             
-            # 'd'로 끝나는 경우 (일 단위)
             if date_str.endswith('d'):
                 try:
                     days = int(date_str[:-1])
-                    target_date = today - timedelta(days=days)
+                    target_date = reference_date - timedelta(days=days)
                     return target_date.strftime('%Y.%m.%d')
                 except:
                     return None
             
-            # 'Jan 14' 형식
+            
             try:
-                # 월 약자를 숫자로 변환
                 parsed_date = datetime.strptime(date_str, '%b %d')
-                # 현재 연도 사용
-                target_date = parsed_date.replace(year=today.year)
+               
+                target_date = parsed_date.replace(year=2025)
+                
+                if target_date > reference_date:
+                    target_date = parsed_date.replace(year=2024)
                 return target_date.strftime('%Y.%m.%d')
             except:
                 pass
             
-            # 이미 yyyy.mm.dd 또는 yyyy-mm-dd 형식인 경우
+            
             try:
                 if '-' in date_str:
                     target_date = datetime.strptime(date_str, '%Y-%m-%d')
@@ -85,21 +85,20 @@ class RottenProcessor(BaseDataProcessor):
             except:
                 return None
         
-        # 날짜 변환
+        
         self.df['date'] = self.df['date'].apply(convert_date)
         
-        # 변환 실패한 날짜(None 또는 정보 부족한 날짜) 제거
+        
         initial_len = len(self.df)
         self.df = self.df.dropna(subset=['date'])
         removed = initial_len - len(self.df)
-        if removed > 0:
-            print(f"날짜 정보 부족으로 제거: {removed}개 행")
+        
     
     def _handle_outliers(self):
         """이상치 처리"""
         initial_len = len(self.df)
         
-        # 별점 범위 확인 (0.0 ~ 10.0)
+        
         self.df = self.df[(self.df['rating'] >= 0.0) & (self.df['rating'] <= 10.0)]
         
         # 비정상적으로 짧은 리뷰 제거 (5자 미만)
@@ -109,8 +108,7 @@ class RottenProcessor(BaseDataProcessor):
         self.df = self.df[self.df['content'].str.len() <= 10000]
         
         removed = initial_len - len(self.df)
-        if removed > 0:
-            print(f"이상치 제거: {removed}개 행")
+        
     
     def _preprocess_text(self):
         """텍스트 데이터 전처리"""
@@ -124,7 +122,7 @@ class RottenProcessor(BaseDataProcessor):
         """파생 변수 생성 및 텍스트 벡터화"""
         # 1. 리뷰 문장 수 계산 (파생 변수)
         self.df['sentence_count'] = self.df['content'].apply(self._count_sentences)
-        print(f"파생 변수 생성 완료: sentence_count")
+        
         
         # 2. TF-IDF 벡터화
         self._vectorize_text()
@@ -133,7 +131,7 @@ class RottenProcessor(BaseDataProcessor):
         """TF-IDF를 이용한 텍스트 벡터화"""
         from sklearn.feature_extraction.text import TfidfVectorizer
         
-        print("TF-IDF 벡터화 시작...")
+        
         
         # TF-IDF 벡터라이저 생성 (feature 개수: 2000)
         tfidf_vectorizer = TfidfVectorizer(
@@ -155,7 +153,6 @@ class RottenProcessor(BaseDataProcessor):
         # 원본 데이터프레임과 결합
         self.df = pd.concat([self.df.reset_index(drop=True), tfidf_df], axis=1)
         
-        print(f"TF-IDF 벡터화 완료: {tfidf_matrix.shape[1]}개 feature 생성")
     
     def _count_sentences(self, text):
         """문장 수를 세는 함수"""
@@ -171,6 +168,14 @@ class RottenProcessor(BaseDataProcessor):
         output_filename = "preprocessed_reviews_rotten.csv"
         output_path = os.path.join(self.output_dir, output_filename)
         
+        # 기존 파일이 있다면 삭제 시도
+        if os.path.exists(output_path):
+            try:
+                os.remove(output_path)
+            except PermissionError:
+            
+                raise
+        
         # CSV로 저장
         self.df.to_csv(output_path, index=False, encoding='utf-8-sig')
-        print(f"전처리된 데이터 저장 완료: {output_path}")
+        
