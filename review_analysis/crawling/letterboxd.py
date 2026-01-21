@@ -30,7 +30,7 @@ class letterboxdCrawler(BaseCrawler):
         self.driver = None
         self.reviews_data = []
         self.logger = setup_logger()
-        self.target_url = "https://letterboxd.com/film/interstellar/reviews/by/added/"
+        self.target_url = "https://letterboxd.com/film/interstellar/reviews/by/activity/"
         self.max_retries = 3
         # 중복 체크용 set
         self.seen_contents = set()
@@ -146,13 +146,19 @@ class letterboxdCrawler(BaseCrawler):
             return []
 
     def _format_date(self, date_str):
-        """날짜 형식 변환 (YYYY-MM-DD → YYYY.MM.DD)"""
+        """날짜 형식 변환 → YYYY.MM.DD"""
         if not date_str or date_str == '날짜 정보 없음':
             return '날짜 정보 없음'
         try:
+            # ISO 형식: 2026-01-21T21:10:02.282Z
+            if 'T' in date_str:
+                date_part = date_str.split('T')[0]  # 2026-01-21
+                return date_part.replace('-', '.')
+            
             # YYYY-MM-DD 형식
             if '-' in date_str and len(date_str) == 10:
                 return date_str.replace('-', '.')
+            
             return date_str
         except:
             return date_str

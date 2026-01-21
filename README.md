@@ -1,0 +1,126 @@
+</br>
+
+# [4회차] EDA & FE 및 시각화 
+
+## 0. 개요 및 실행방법
+
+## 1. 개별 사이트 EDA
+
+### 1.1 Rotten Tomato
+
+* 점수 분포
+
+
+
+* 리뷰 수 추이
+
+
+
+* 리뷰 길이
+
+
+### 1.2 IDMB
+
+* 점수 분포
+
+
+
+* 리뷰 수 추이
+
+
+
+* 리뷰 길이
+
+### 1.3 LetterBox
+
+* 점수 분포
+
+
+
+* 리뷰 수 추이
+
+
+
+* 리뷰 길이
+
+
+## 2. 전처리 / FE
+
+* 결측치 처리
+
+
+
+* 이상치 처리
+
+
+
+* 텍스트 데이터 전처리
+
+
+
+* 파생 변수 생성
+
+  * ```sentence_count``` : 리뷰 text 에서 문장의 수를 추출.
+
+* 텍스트 벡터화
+
+  * TF-IDF를 사용해 단어를 벡터화
+ 
+  * ```max_features``` = 2000 으로 설정
+
+
+
+## 3. 비교분석
+
+
+--------------------
+
+# [4회차] Github 협업 및 자기소개
+
+## 1. Github 협업 
+
+* Branch Protection
+
+![branch protection](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/github/branch_protection.png)
+
+* Push Rejected
+
+![push rejected](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/github/push_rejected.png)
+
+* Review and Merged
+
+![review and merged](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/github/review_and_merged.png)
+
+
+## 2. 팀 소개
+28기 8조는 정기준(팀장), 오상호, 황소현으로 구성되어있습니다.
+
+* 정기준
+  
+|항목|내용|
+|---|---|
+|소속| QRM 20 
+|1지망 팀| DE
+|MBTI| INTJ
+|취미| 기타, 사진
+
+* 오상호
+  
+|항목|내용|
+|---|---|
+|소속|
+|1지망 팀|
+|MBTI|
+|취미|
+
+* 황소현
+  
+|항목|내용|
+|---|---|
+|소속|
+|1지망 팀|
+|MBTI|
+|취미|
+
+
+</br>
