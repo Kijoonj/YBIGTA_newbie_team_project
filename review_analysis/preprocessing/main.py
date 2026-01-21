@@ -10,11 +10,12 @@ from review_analysis.preprocessing.rotten_processor import RottenProcessor
 # key는 "reviews_사이트이름"으로, value는 해당 처리를 위한 클래스
 PREPROCESS_CLASSES: Dict[str, Type[BaseDataProcessor]] = {
     "reviews_example": ExampleProcessor,
-    "reviews_rotten" : 
+    "reviews_rotten" : RottenProcessor
     # key는 크롤링한 csv파일 이름으로 적어주세요! ex. reviews_naver.csv -> reviews_naver
 }
 
-REVIEW_COLLECTIONS = glob.glob(os.path.join("..","..","database", "reviews_*.csv"))
+REVIEW_COLLECTIONS = glob.glob(os.path.join("database", "reviews_*.csv"))
+
 
 def create_parser() -> ArgumentParser:
     parser = ArgumentParser()
@@ -26,18 +27,19 @@ def create_parser() -> ArgumentParser:
     return parser
 
 if __name__ == "__main__":
-
     parser = create_parser()
     args = parser.parse_args()
 
     os.makedirs(args.output_dir, exist_ok=True)
-
+    
     if args.all: 
         for csv_file in REVIEW_COLLECTIONS:
             base_name = os.path.splitext(os.path.basename(csv_file))[0]
+            
             if base_name in PREPROCESS_CLASSES:
                 preprocessor_class = PREPROCESS_CLASSES[base_name]
                 preprocessor = preprocessor_class(csv_file, args.output_dir)
                 preprocessor.preprocess()
                 preprocessor.feature_engineering()
                 preprocessor.save_to_database()
+
