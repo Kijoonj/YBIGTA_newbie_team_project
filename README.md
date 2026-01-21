@@ -1,19 +1,25 @@
-# 1. 개별 사이트 EDA
+</br>
 
-## Rotten Tomato
+# [4회차] EDA & FE 및 시각화 
 
-## IDMB
+## 1. 개별 사이트 EDA
 
-## LetterBox
+### 1.1 Rotten Tomato
 
-# 2. 전처리 / FE
+### 1.2 IDMB
 
-# 3. 비교분석
+### 1.3 LetterBox
+
+## 2. 전처리 / FE
+
+## 3. 비교분석
 
 
 --------------------
 
-# 1. Github 협업
+# [4회차] Github 협업 및 자기소개
+
+## 1. Github 협업 
 
 * Branch Protection
 
@@ -27,37 +33,8 @@
 
 ![review and merged](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/github/review_and_merged.png)
 
-# 2. 팀 및 팀원 소개
-28기 8조는 정기준(팀장), 오상호, 황소현으로 구성 1. 개별 사이트 EDA
 
-## Rotten Tomato
-
-## IDMB
-
-## LetterBox
-
-# 2. 전처리 / FE
-
-# 3. 비교분석
-
-
---------------------
-
-# 1. Github 협업
-
-* Branch Protection
-
-![branch protection](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/github/branch_protection.png)
-
-* Push Rejected
-
-![push rejected](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/github/push_rejected.png)
-
-* Review and Merged
-
-![review and merged](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/github/review_and_merged.png)
-
-# 2. 팀 소개
+## 2. 팀 소개
 28기 8조는 정기준(팀장), 오상호, 황소현으로 구성되어있습니다.
 
 * 정기준
@@ -86,3 +63,6 @@
 |1지망 팀|
 |MBTI|
 |취미|
+
+
+</br>
