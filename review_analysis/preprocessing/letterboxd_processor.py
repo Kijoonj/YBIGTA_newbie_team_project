@@ -9,8 +9,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer  # type: ignore
 from review_analysis.preprocessing.base_processor import BaseDataProcessor
 
 # 한글 폰트 설정 (Mac)
-plt.rcParams['font.family'] = 'AppleGothic'
-plt.rcParams['axes.unicode_minus'] = False
+#plt.rcParams['font.family'] = 'AppleGothic'
+#plt.rcParams['axes.unicode_minus'] = False
 
 
 class LetterboxdProcessor(BaseDataProcessor):
@@ -272,7 +272,7 @@ class LetterboxdProcessor(BaseDataProcessor):
             columns=self.tfidf_vectorizer.get_feature_names_out()
         )
         tfidf_path = os.path.join(self.output_dir, "tfidf_reviews_letterboxd.csv")
-        tfidf_df.to_csv(tfidf_path, index=False, encoding='utf-8-sig')
+        #tfidf_df.to_csv(tfidf_path, index=False, encoding='utf-8-sig')
         print(f"- TF-IDF 매트릭스 저장: {tfidf_path}")
         
         # 3. 통계 요약 저장
@@ -286,15 +286,15 @@ class LetterboxdProcessor(BaseDataProcessor):
         
         stats_df = pd.DataFrame([stats])
         stats_path = os.path.join(self.output_dir, "stats_reviews_letterboxd.csv")
-        stats_df.to_csv(stats_path, index=False, encoding='utf-8-sig')
+        #stats_df.to_csv(stats_path, index=False, encoding='utf-8-sig')
         print(f"- 통계 요약 저장: {stats_path}")
         
         # 4. EDA 시각화
-        self._visualize_eda()
+        #self._visualize_eda()
         
-        print("\n" + "=" * 50)
-        print("전처리 완료!")
-        print("=" * 50)
+        #print("\n" + "=" * 50)
+        #print("전처리 완료!")
+        #print("=" * 50)
     
     def _visualize_eda(self):
         """EDA 시각화 - 개별 파일로 저장 (영어)"""
