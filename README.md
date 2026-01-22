@@ -22,7 +22,7 @@
   
   - Preprecessor 실행
     - Working Directory 설정: ```cd "~/review_analysis/preprocessing"```
-    - 실행: ```python main.py --all```
+    - 실행: ```python main.py --output_dir ..\..\database --all```
 
     
 ## 1. 개별 사이트 EDA
@@ -224,6 +224,7 @@ IMDb: 감성 지수의 스펙트럼이 가장 넓습니다. 이는 장문의 분
 
 
 </br>
+
 
 
 
