@@ -21,7 +21,7 @@ class ImdbCrawler(BaseCrawler):
         '''imdbcrawler 클래스 초기화'''
         super().__init__(output_dir)
         self.base_url = 'https://www.imdb.com/title/tt0816692/reviews/?ref_=tt_ururv_genai_sm'
-        self.reviews = []
+        self.reviews: list = []
         
     def start_browser(self):
         '''Selenium WebDriver 설정하고 대상 브라우저 실행'''
@@ -151,4 +151,5 @@ class ImdbCrawler(BaseCrawler):
         save_path = os.path.join(self.output_dir, "reviews_imdb.csv")
         os.makedirs(self.output_dir, exist_ok=True)
         df.to_csv(save_path, index=False, encoding='utf-8-sig')
+
         print(f"CSV 파일 저장 완료: {save_path}")
