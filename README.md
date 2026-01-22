@@ -4,26 +4,86 @@
 
 ## 0. 개요 및 실행방법
 
+- 인터스텔라(2014)에 대한 ```rating```, ```review_counts```, ```review_length``` 를 다음 세 사이트를 활용하여 크롤링했습니다.
+  
+  - Rotten Tomatoes: https://www.rottentomatoes.com/
+  - IMDb: https: https://www.imdb.com/
+  - LetterBoxd: https://letterboxd.com/
+ 
+- 데이터 형식: 수집된 데이터는 'date, rating, content' 항목에 대하여 csv 형식으로 저장되어 있습니다.
+- 데이터 개수: 각 사이트마다 약 500 ~ 600개의 데이터를 수집하였으며 총 1700개 이상의 리뷰 데이터를 수집하였습니다.
+  - Rotten Tomatoes: 610
+  - IMDb: 600개
+  - LetterBoxd: 500개
+    
+
+- 실행 방법
+  1) 환경 설정 및 가상환경 활성화:
+     ```bash
+      # 가상환경 생성 및 활성화
+      python -m venv venv
+      source venv/bin/activate  # Mac/Linux
+      .\venv\Scripts\activate   # Windows
+      
+      # 의존성 라이브러리 설치
+      pip install -r requirements.txt
+     ```
+
+  2) 프로젝트 루트로 이동
+     ```bash
+     cd YBIGTA_newbie_team_project
+     ```
+
+  3) 크롤러 실행
+      ```bash
+       cd review_analysis/crawling
+       python main.py -o ../../database --all
+      ```
+
+  4) 전처리 실행
+      ```bash
+      cd ../preprocessing
+      python main.py --output_dir ../../database --all
+      ```
+
+
 ## 1. 개별 사이트 EDA
 
 ### 1.1 Rotten Tomato
 
-* 점수 분포
+#### 점수 분포
 
 ![rating rotten](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/rating(Rotten%20Tomato).png)
 
-* 리뷰 수 추이
+- 특성
+  - 긍정적 리뷰 (8~10점)에 대부분이 분포하며 그 중 10점이 가장 많습니다.
+
+- 이상치
+  - 모든 데이터는 1~10 범위 안에 있었고 이를 벗어나는 데이터는 없었습니다.
+
+#### 리뷰 수 추이
 
 ![review counts rotten](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_counts(Rotten%20Tomato).png)
 
-* 리뷰 길이
+- 특성
+  - 개봉 10주년이 되는 24년 말을 제외하고 비슷하게 적은 리뷰수가 유지되는 모습을 확인할 수 있습니다.
+
+- 이상치
+  - 2024년 12월에 리뷰수가 급격하게 증가하는 모습을 보입니다. 이에 대한 조사 결과, 10주년 IMAX 재개봉이 그 원인으로 보이며 비슷한 흐름을 구글 트렌드에서도 확인할 수 있었습니다.
+
+#### 리뷰 길이
 
 ![review length](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_length(Rotten%20Tomato).png)
 
+- 특성
+  - 대부분의 리뷰는 500자(char기준) 이내에 분포합니다.
+
+- 이상치
+  - 3000, 4000자를 넘는 리뷰가 각각 1개씩 확인됩니다.
 
 ### 1.2 IMDB
 
-* 점수 분포
+#### 점수 분포
 IMDb 리뷰 데이터의 전반적인 특성과 이상치를 파악하기 위해 다양한 시각화를 수행하였습니다.
 
 ![rating imdb](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/rating(IMDb).png)
@@ -35,7 +95,7 @@ IMDb 리뷰 데이터의 전반적인 특성과 이상치를 파악하기 위해
   - 별점이 없는 경우를 0으로 처리한 데이터가 존재합니다.
   - 정상 범위(1~10점)를 벗어나는 이상치 데이터는 총 35개로 확인되었습니다.
 
-* 리뷰 수 추이
+#### 리뷰 수 추이
 
 ![review counts imdb](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_counts(IMDb).png)
 
@@ -49,7 +109,7 @@ IMDb 리뷰 데이터의 전반적인 특성과 이상치를 파악하기 위해
   - 시계열 분석에 활용 가능한 데이터임을 확인하였습니다.
 
 
-* 리뷰 길이
+#### 리뷰 길이
 
 ![review length imdb](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_length(IMDb).png)
 
@@ -64,17 +124,34 @@ IMDb 리뷰 데이터의 전반적인 특성과 이상치를 파악하기 위해
 
 ### 1.3 LetterBox
 
-* 점수 분포
+#### 점수 분포
 
 ![rating letterbox](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/rating(letterbox).png)
 
-* 리뷰 수 추이
+- 특성
+  - 평점이 10점에 강하게 몰려 있음 (가장 높은 막대가 10점 구간)
+  - 전체적으로 고평점 편향(왼쪽 꼬리 분포) 형태를 보임
+
+#### 리뷰 수 추이
 
 ![review counts imdb](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_counts(letterbox).png)
 
-* 리뷰 길이
+- 특성
+  - 대부분 날짜에서 리뷰 수가 1개 수준으로 평소엔 리뷰가 꾸준히 적게 발생
+  - 리뷰 발생이 연속적이지 않고 간헐적으로 긴 기간 동안 띄엄띄엄 있음
+- 이상치
+  - 2024년 초 10주년 기념 재개봉이라는 특수 이벤트로 큰 스파이크를 보임
+
+#### 리뷰 길이
 
 ![review length](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_length(letterbox).png)
+
+- 특성
+  - 중앙값은 270자 전후로 짧은 리뷰가 대부분임
+  - IQR구간이 80 ~ 450 으로 일반적인 리뷰 길이가 꽤 넓게 퍼져있음
+- 이상치
+  - 10자 이내의 매우 짧은 리뷰, 600자 이상의 리뷰가 관찰됨
+
 
 
 ## 2. 전처리 / FE
