@@ -4,6 +4,15 @@
 
 ## 0. 개요 및 실행방법
 
+- 인터스텔라(2014)에 대한 ```rating```, ```review_counts```, ```review_length``` 를 다음 세 사이트를 활용하여 크롤링했습니다.
+  
+  - Rotten Tomatoes: https://www.rottentomatoes.com/
+  - IMDb: https: https://www.imdb.com/
+  - LetterBoxd: https://letterboxd.com/
+
+- 실행 방법
+
+
 ## 1. 개별 사이트 EDA
 
 ### 1.1 Rotten Tomato
@@ -185,6 +194,7 @@ IMDb: 감성 지수의 스펙트럼이 가장 넓습니다. 이는 장문의 분
 
 
 </br>
+
 
 
 
