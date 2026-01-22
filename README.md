@@ -12,14 +12,31 @@
 
 ![rating rotten](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/rating(Rotten%20Tomato).png)
 
+- 특성
+  - 9 ~ 10점 사이에 분포가 집중되어 영화에 대한 만족도가 높음을 확인할 수 있습니다.
+
+- 이상치
+  - 모든 데이터는 0~10 범위 안에 있었고 이를 벗어나는 데이터는 없었습니다.
+
 #### 리뷰 수 추이
 
 ![review counts rotten](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_counts(Rotten%20Tomato).png)
+
+- 특성
+  - 개봉 10주년이 되는 24년 말을 제외하고 비슷하게 적은 리뷰수가 유지되는 모습을 확인할 수 있습니다.
+
+- 이상치
+  - 2024년 12월에 리뷰수가 급격하게 증가하는 모습을 보입니다. 이에 대한 조사 결과, 10주년 IMAX 재개봉이 그 원인으로 보이며 비슷한 흐름을 구글 트렌드에서도 확인할 수 있었습니다.
 
 #### 리뷰 길이
 
 ![review length](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_length(Rotten%20Tomato).png)
 
+- 특성
+  - 대부분의 리뷰는 500자(char기준) 이내에 분포합니다.
+
+- 이상치
+  - 3000, 4000자를 넘는 리뷰가 각각 1개씩 확인됩니다.
 
 ### 1.2 IMDB
 
@@ -168,4 +185,5 @@ IMDb: 감성 지수의 스펙트럼이 가장 넓습니다. 이는 장문의 분
 
 
 </br>
+
 
