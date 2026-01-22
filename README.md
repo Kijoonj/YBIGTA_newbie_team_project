@@ -30,17 +30,17 @@
 
   2) 프로젝트 루트로 이동
      ```bash
-     cd YBIGTA_newbie_team_project
+       cd YBIGTA_newbie_team_project
 
   3) 크롤러 실행
     ```bash
-     cd review_analysis/crawling
-     python main.py -o ../../database --all
+       cd review_analysis/crawling
+       python main.py -o ../../database --all
 
   4) 전처리 실행
     ```bash
-    cd ../preprocessing
-    python main.py --output_dir ../../database --all
+      cd ../preprocessing
+      python main.py --output_dir ../../database --all
 
 
 ## 1. 개별 사이트 EDA
@@ -241,6 +241,7 @@ IMDb: 감성 지수의 스펙트럼이 가장 넓습니다. 이는 장문의 분
 
 
 </br>
+
 
 
 
