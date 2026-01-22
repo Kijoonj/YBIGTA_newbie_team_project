@@ -1,16 +1,860 @@
-2026-01-22 21:33:46,929 - DEBUG - getting release number from /last-known-good-versions-with-downloads.json
-2026-01-22 21:33:46,979 - DEBUG - downloading from https://storage.googleapis.com/chrome-for-testing-public/144.0.7559.96/win32/chromedriver-win32.zip
-2026-01-22 21:33:47,953 - DEBUG - unzipping C:\Users\jkijo\AppData\Local\Temp\tmp84f8ax0u
-2026-01-22 21:33:48,708 - INFO - patching driver executable C:\Users\jkijo\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
-2026-01-22 21:33:48,723 - DEBUG - found block:
+2026-01-22 22:44:32,875 - DEBUG - getting release number from /latest-versions-per-milestone-with-downloads.json
+2026-01-22 22:44:32,975 - DEBUG - downloading from https://storage.googleapis.com/chrome-for-testing-public/143.0.7499.192/win32/chromedriver-win32.zip
+2026-01-22 22:44:34,057 - DEBUG - unzipping C:\Users\jkijo\AppData\Local\Temp\tmp84bd8ny2
+2026-01-22 22:44:35,050 - INFO - patching driver executable C:\Users\jkijo\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2026-01-22 22:44:35,066 - DEBUG - found block:
 b'{window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_adoQpoasnfa76pfcZLmcfl_Proxy = window.Proxy;window.cdc_adoQpoasnfa76pfcZLmcfl_Symbol = window.Symbol;window.cdc_adoQpoasnfa76pfcZLmcfl_JSON = window.JSON;window.cdc_adoQpoasnfa76pfcZLmcfl_Window = window.Window;}'
 replacing with:
 b'{console.log("undetected chromedriver 1337!")}                                                                                                                                                                                                                                                                                                                                                             '
-2026-01-22 21:33:48,808 - DEBUG - patching took us 0.10 seconds
-2026-01-22 21:33:49,412 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\jkijo\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
-2026-01-22 21:33:50,091 - DEBUG - Started executable: `C:\Users\jkijo\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe` in a child process with pid: 43188 using 0 to output -3
-2026-01-22 21:33:50,603 - DEBUG - POST http://localhost:47986/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': 'eager', 'goog:chromeOptions': {'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': ['--incognito', '--no-sandbox', '--disable-dev-shm-usage', '--window-size=1920,1080', '--remote-debugging-host=127.0.0.1', '--remote-debugging-port=47985', '--user-data-dir=C:\\Users\\jkijo\\AppData\\Local\\Temp\\tmpe5vpmr6a', '--lang=ko-KR', '--no-default-browser-check', '--no-first-run', '--no-sandbox', '--test-type', '--window-size=1920,1080', '--start-maximized', '--no-sandbox', '--log-level=0'], 'debuggerAddress': '127.0.0.1:47985'}}}}
-2026-01-22 21:33:50,604 - DEBUG - Starting new HTTP connection (1): localhost:47986
-2026-01-22 21:33:50,609 - DEBUG - http://localhost:47986 "POST /session HTTP/1.1" 500 0
-2026-01-22 21:33:50,609 - DEBUG - Remote response: status=500 | data={"value":{"error":"session not created","message":"session not created: cannot connect to chrome at 127.0.0.1:47985\nfrom session not created: This version of ChromeDriver only supports Chrome version 144\nCurrent browser version is 143.0.7499.193","stacktrace":"Symbols not available. Dumping unresolved backtrace:\n\t0x707d13\n\t0x707d54\n\t0x52b290\n\t0x5668f2\n\t0x56592c\n\t0x55b9e5\n\t0x55b806\n\t0x5a459f\n\t0x5a3db7\n\t0x597d56\n\t0x5694d9\n\t0x56a294\n\t0x97bb64\n\t0x977215\n\t0x993fad\n\t0x721ef8\n\t0x729b0d\n\t0x710738\n\t0x710902\n\t0x6fa1da\n\t0x75a85d49\n\t0x77a8d5db\n\t0x77a8d561\n"}} | headers=HTTPHeaderDict({'Content-Length': '602', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2026-01-22 21:33:50,609 - DEBUG - Finished Request
+2026-01-22 22:44:35,183 - DEBUG - patching took us 0.13 seconds
+2026-01-22 22:44:35,208 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\jkijo\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2026-01-22 22:44:35,278 - DEBUG - Started executable: `C:\Users\jkijo\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe` in a child process with pid: 38320 using 0 to output -3
+2026-01-22 22:44:35,781 - DEBUG - POST http://localhost:7608/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': 'eager', 'goog:chromeOptions': {'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': ['--incognito', '--no-sandbox', '--disable-dev-shm-usage', '--window-size=1920,1080', '--remote-debugging-host=127.0.0.1', '--remote-debugging-port=7607', '--user-data-dir=C:\\Users\\jkijo\\AppData\\Local\\Temp\\tmp21e06lfi', '--lang=ko-KR', '--no-default-browser-check', '--no-first-run', '--no-sandbox', '--test-type', '--window-size=1920,1080', '--start-maximized', '--no-sandbox', '--log-level=0'], 'debuggerAddress': '127.0.0.1:7607'}}}}
+2026-01-22 22:44:35,782 - DEBUG - Starting new HTTP connection (1): localhost:7608
+2026-01-22 22:44:35,829 - DEBUG - http://localhost:7608 "POST /session HTTP/1.1" 200 0
+2026-01-22 22:44:35,829 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"143.0.7499.193","chrome":{"chromedriverVersion":"143.0.7499.192 (be2c1f4fd451578a9ada68a0ac12d659362b44bf-refs/branch-heads/7499@{#4083})"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"127.0.0.1:7607"},"pageLoadStrategy":"eager","platformName":"","proxy":{},"setWindowRect":false,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"643a405e3b9ccc2ed611819fb39a5fbc"}} | headers=HTTPHeaderDict({'Content-Length': '760', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:35,829 - DEBUG - Finished Request
+2026-01-22 22:44:35,830 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/timeouts {'implicit': 2000}
+2026-01-22 22:44:35,830 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/timeouts HTTP/1.1" 200 0
+2026-01-22 22:44:35,830 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:35,830 - DEBUG - Finished Request
+2026-01-22 22:44:35,830 - INFO - undetected-chromedriver 시작 완료 (스텔스 모드)
+2026-01-22 22:44:35,831 - INFO - 데이터 수집 시작: https://letterboxd.com/film/interstellar/reviews/by/activity/
+2026-01-22 22:44:35,832 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/url {'url': 'https://letterboxd.com/film/interstellar/reviews/by/activity/'}
+2026-01-22 22:44:37,211 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/url HTTP/1.1" 200 0
+2026-01-22 22:44:37,212 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:37,212 - DEBUG - Finished Request
+2026-01-22 22:44:41,035 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:44:41,074 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:44:41,074 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.03D024ECE5A58B361E94946B114FD43D.e.679"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:41,074 - DEBUG - Finished Request
+2026-01-22 22:44:41,074 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:44:41,091 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:44:41,097 - DEBUG - Finished Request
+2026-01-22 22:44:41,097 - INFO - 페이지 1: 12개 추가 (총 12개)
+2026-01-22 22:44:41,097 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:44:41,108 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:44:41,108 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.03D024ECE5A58B361E94946B114FD43D.e.1055"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:41,108 - DEBUG - Finished Request
+2026-01-22 22:44:41,109 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.03D024ECE5A58B361E94946B114FD43D.e.1055'}]}
+2026-01-22 22:44:41,114 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:44:41,114 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:41,114 - DEBUG - Finished Request
+2026-01-22 22:44:44,030 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.03D024ECE5A58B361E94946B114FD43D.e.1055'}]}
+2026-01-22 22:44:44,454 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:44:44,454 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:44,454 - DEBUG - Finished Request
+2026-01-22 22:44:44,454 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:44:44,474 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:44:44,474 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.96DA64CE61994E439779A59978BB4697.e.3724"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:44,474 - DEBUG - Finished Request
+2026-01-22 22:44:44,474 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:44:44,493 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:44:44,493 - DEBUG - Remote response: status=200 | data={"value":[{"content":"JESSICA CHASTAIN SAVED US ALL","date":"2017-05-05","rating":"10"},{"content":"is that the dude who fucked a peach in that gay movie?","date":"2022-11-06","rating":"10"},{"content":"I have been staring at this blank canvas for a good half hour now, and I still can't find the words. How the hell do I start a review about a film like this? I walked out of the cinema in a daze, baffled and thrilled and grinning like a damn fool. My car is a two door red Honda Civic and yet I approached a white SUV with my keys out as if it was my ticket home because… more","date":"2014-11-04","rating":"10"},{"content":"fuck you matthew mcconaughey for making me cry","date":"2020-06-10","rating":"9"},{"content":"what did time ever do to christopher nolan","date":"2022-10-04","rating":"9"},{"content":"Film bro this. Film bro that. I don't care. Fuck you. This movie is conceptually bold and I love and adore it. It's a level of ambition we rarely see in film and a display of technical execution that never ceases to amaze me, all backed by arguably the greatest film score of all time.\n\nI've been on the Interstellar train since the day I first watched it on the big screen and my entire theater collectively gasped during the… more","date":"2022-12-31","rating":"10"},{"content":"If you're one of the three people in the universe that hasn't seen this film, there'll be spoilers hereThe Nolan Brothers are poor writers, something they prove once again with a high concept, beautifully shot but shoddily written script that overreaches its grasp at just about every turn. Christopher Nolan is a far better director than he is a writer, he really should direct something once that wasn't written by him or his brother.Interstellar is not a bad… more","date":"2014-11-18","rating":"6"},{"content":"me: don’t cry don’t cry don’t cry\nMurph: today I'm the same age you were when you left... so it‘d be a really good time for you to come back\nmy eyes: lmao let’s show this bitch the niagara falls","date":"2018-03-02T14:33:58.013Z","rating":"10"},{"content":"70mm imax, 2 hours 49 minutes of full body chills, head still vibrating from the sound, I now believe love transcends space and time and has the power to save mankind","date":"2024-12-08","rating":"평점 없음"},{"content":"My dad died when I was sixteen. He was my best friend & the most extraordinary person I’ve ever known. The last conversation we ever had involved me holding his hand in a hospital room. One of the final things he gave me was his watch. I wear it every day. Needless to say, “because my dad promised me” makes me full on weep every time.","date":"2020-12-21","rating":"평점 없음"},{"content":"The most jaw dropping part of this is still when Matt Damon shows up","date":"2020-05-15","rating":"8"},{"content":"Top 2 most devastating Matt Damon betrayals1. When he told Arthur Read he could never eat lunch in this town again2. This movie","date":"2024-02-09","rating":"9"}]} | headers=HTTPHeaderDict({'Content-Length': '2993', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:44,494 - DEBUG - Finished Request
+2026-01-22 22:44:44,494 - INFO - 페이지 2: 12개 추가 (총 24개)
+2026-01-22 22:44:44,494 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:44:44,536 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:44:44,537 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.96DA64CE61994E439779A59978BB4697.e.4110"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:44,537 - DEBUG - Finished Request
+2026-01-22 22:44:44,537 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.96DA64CE61994E439779A59978BB4697.e.4110'}]}
+2026-01-22 22:44:44,667 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:44:44,668 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:44,668 - DEBUG - Finished Request
+2026-01-22 22:44:47,096 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.96DA64CE61994E439779A59978BB4697.e.4110'}]}
+2026-01-22 22:44:47,509 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:44:47,509 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:47,509 - DEBUG - Finished Request
+2026-01-22 22:44:47,509 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:44:47,534 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:44:47,535 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.C6B6094AF900FD86123225E4FB6AEEB5.e.6771"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:47,535 - DEBUG - Finished Request
+2026-01-22 22:44:47,535 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:44:47,563 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:44:47,563 - DEBUG - Remote response: status=200 | data={"value":[{"content":"tars :)","date":"2022-03-07","rating":"평점 없음"},{"content":"was forcibly removed from the IMAX 10 Year Anniversary release for asking everyone around me if they knew Matt Damon was gonna be in this","date":"2024-12-09","rating":"10"},{"content":"christopher nolan should make a superhero movie. imagine how good that would be","date":"2020-08-24","rating":"8"},{"content":"hahahaha the main menu came on and i started crying what the fuck why is this the saddest movie to ever exist","date":"2017-03-07","rating":"10"},{"content":"\"I'm coming back...\"\n\n\"When?\"\n\nNolan you genius bastard. So many immaculate scenes, astounding sequences, heartbreaking moments, and stunning shots combine into a work that isn't flawless but beautiful because of that.\n\nA visionary achievement that I will cherish until I settle down for the long nap.","date":"2015-03-31","rating":"10"},{"content":"To me this will always be half the most amazing space masterpiece that gives me the most genuine chills and goosebumps and makes me question everything in life\n\nAnd half stupid ass bumbfuck ending dumbass stupid ass what the dumb halo ring human life bull bdkrkfigi","date":"2020-11-02","rating":"8"},{"content":"There are so many extraordinary choices here, small and large decisions that make this unusually, almost painfully ambitious movie greater than the sum of all its tiny particles. Nolan seems to be after some unholy alliance of 'Close Encounters' and 'Days of Heaven,' an agrarian family drama vaulted into the cosmos, with a heaping portion of 'Cosmos.' The sequence in which Dr. Mann and Cooper wrestle crosscut with Murph and Tom's showdown on the farm is some of Nolan's finest… more","date":"2020-09-04","rating":"7"},{"content":"We're just here to be memories for our kids. Still just a miracle of a movie in which Nolan found a way to merge his blockbuster scaled science-fiction imagery with personal ideas about being a father on a dying planet and how his professional/technical passions are directly connected to losing to time with his children, finding a way to package them both as something that contains a bit of The Right Stuff, Solaris, Close Encounters (if we stuck with the… more","date":"2021-02-14","rating":"10"},{"content":"Holy hell this is bad. It's like a moron schooled an imbecile in \"space stuff\" (wormholes! 5 dimensions! um yeh, space stuff!), making sure to add Hollywood-engendered emotional bullet points, and with a ridiculous \"Earth (ie, small-town America) can only grow corn and there's lots of dust\" backstory thrown in for good measure. The music consists of two notes played over and over by a delinquent hamster. The ending is trash, varying between nonsense and sentimentality - but really this… more","date":"2020-08-15T21:04:59.159Z","rating":"4"},{"content":"I WILL NEVER TRUST MATT DAMON FOR AS LONG AS I LIVE. FUCK MATT DAMON !!!","date":"2015-03-19","rating":"9"},{"content":"Seeing Anne Hathaway queen out in space in IMAX 1570 was a spiritual experience","date":"2023-10-26","rating":"10"},{"content":"remember how nasa asked sally ride if 100 tampons was enough for one week in space? anne hathaway goes for like two minutes tops and she wants to fuckin go to planet whatever to chase after a dude she banged ten years ago because women are guided by their emotions and love is all you need","date":"2014-11-04","rating":"4"}]} | headers=HTTPHeaderDict({'Content-Length': '3424', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:47,563 - DEBUG - Finished Request
+2026-01-22 22:44:47,563 - INFO - 페이지 3: 12개 추가 (총 36개)
+2026-01-22 22:44:47,563 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:44:47,610 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:44:47,610 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.C6B6094AF900FD86123225E4FB6AEEB5.e.7148"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:47,611 - DEBUG - Finished Request
+2026-01-22 22:44:47,611 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.C6B6094AF900FD86123225E4FB6AEEB5.e.7148'}]}
+2026-01-22 22:44:47,713 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:44:47,713 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:47,713 - DEBUG - Finished Request
+2026-01-22 22:44:50,001 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.C6B6094AF900FD86123225E4FB6AEEB5.e.7148'}]}
+2026-01-22 22:44:50,591 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:44:50,592 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:50,592 - DEBUG - Finished Request
+2026-01-22 22:44:50,592 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:44:50,612 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:44:50,612 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.555A9D4AD2637EF7BDC0CF1D861D649C.e.9930"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:50,612 - DEBUG - Finished Request
+2026-01-22 22:44:50,612 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:44:50,636 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:44:50,638 - DEBUG - Finished Request
+2026-01-22 22:44:50,638 - INFO - 페이지 4: 12개 추가 (총 48개)
+2026-01-22 22:44:50,638 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:44:50,716 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:44:50,716 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.555A9D4AD2637EF7BDC0CF1D861D649C.e.10316"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:50,716 - DEBUG - Finished Request
+2026-01-22 22:44:50,716 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.555A9D4AD2637EF7BDC0CF1D861D649C.e.10316'}]}
+2026-01-22 22:44:50,761 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:44:50,761 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:50,762 - DEBUG - Finished Request
+2026-01-22 22:44:52,979 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.555A9D4AD2637EF7BDC0CF1D861D649C.e.10316'}]}
+2026-01-22 22:44:53,403 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:44:53,403 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:53,403 - DEBUG - Finished Request
+2026-01-22 22:44:53,403 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:44:53,424 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:44:53,425 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.F7B5B75D0BA947F73382E7D4612609CE.e.12933"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:53,425 - DEBUG - Finished Request
+2026-01-22 22:44:53,425 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:44:53,443 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:44:53,443 - DEBUG - Remote response: status=200 | data={"value":[{"content":"my wig flew and is currently orbiting every far corner of space and time with mr mcconaughey","date":"2018-03-28","rating":"10"},{"content":"imagine you're timothee chalamet. your name is tom. your father is kinda meh about you. you can only tend to the crops because you're a bad student. your sister is the special kid. one day your dad goes to space. then you wake up. and you're casey affleck. mate, pick a struggle\n\nwatched at a limited imax screening","date":"2023-09-24","rating":"10"},{"content":"put this on a plaque and call it ultimate proof that Nolan does have a heart.\n\ni do not think the stars are beautiful for their glow but for their possibilities. we are human and we are special because we look up at the sky and ask ourselves what we will find there. we are not tethered to the ground or by tradition or how things have always been done: we see the ultimate unknown of space and tell ourselves… more","date":"2020-08-28","rating":"10"},{"content":"this is probably the fastest i've ever realized i'm too dumb to understand a movie","date":"2020-03-26","rating":"7"},{"content":"this broke my heart and then put it back together in a completely different arrangement i don’t know what this film did to me but whatever it is it’s powerful","date":"2019-05-24","rating":"10"},{"content":"90\n\nFirst re-watch in a long while. If you asked me in high-school about my favorite movies, this would've been on the short-list (and the gushing reviews are still on Letterboxd to prove it). While this is certainly still Top 5 Nolan for me, it doesn't quite match up to his Big 3 (Dunkirk, Inception, and The Prestige), but it holds strong as an astonishing spectacle. Both this and Tenet are experiences that wash over the viewer like water. With… more","date":"2022-11-20","rating":"9"},{"content":"I will be insufferable on twitter when Oppenheimer comes out.","date":"2023-06-19","rating":"10"},{"content":"me and my friends docked once","date":"2022-12-22","rating":"평점 없음"},{"content":"it just can’t be topped can it really","date":"2021-09-18","rating":"10"},{"content":"I witnessed the docking scene in 70mm and everyone clapped after which made me forget the one dimension Anne Hathaway character and that it’s incredibly overwritten. Like damn Nolan(s), you don’t have to hold my hand the entire time. Oh well, the power of love!\n\nEdit: I just learned what “docking” means. No, I will not be changing this post.","date":"2023-12-10","rating":"8"},{"content":"first IMAX viewing. It’s undeniable!","date":"2025-08-25","rating":"9"},{"content":"i am a christopher nolan stan first and a human being second","date":"2023-01-10","rating":"10"}]} | headers=HTTPHeaderDict({'Content-Length': '2717', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:53,443 - DEBUG - Finished Request
+2026-01-22 22:44:53,443 - INFO - 페이지 5: 12개 추가 (총 60개)
+2026-01-22 22:44:53,444 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:44:53,515 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:44:53,516 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.F7B5B75D0BA947F73382E7D4612609CE.e.13314"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:53,516 - DEBUG - Finished Request
+2026-01-22 22:44:53,516 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.F7B5B75D0BA947F73382E7D4612609CE.e.13314'}]}
+2026-01-22 22:44:53,566 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:44:53,566 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:53,566 - DEBUG - Finished Request
+2026-01-22 22:44:55,770 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.F7B5B75D0BA947F73382E7D4612609CE.e.13314'}]}
+2026-01-22 22:44:56,233 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:44:56,234 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:56,234 - DEBUG - Finished Request
+2026-01-22 22:44:56,234 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:44:56,252 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:44:56,252 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.9F6453133FB8427D686A0604FA913940.e.15928"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:56,252 - DEBUG - Finished Request
+2026-01-22 22:44:56,252 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:44:56,268 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:44:56,270 - DEBUG - Finished Request
+2026-01-22 22:44:56,270 - INFO - 페이지 6: 12개 추가 (총 72개)
+2026-01-22 22:44:56,270 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:44:56,302 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:44:56,302 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.9F6453133FB8427D686A0604FA913940.e.16305"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:56,302 - DEBUG - Finished Request
+2026-01-22 22:44:56,303 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.9F6453133FB8427D686A0604FA913940.e.16305'}]}
+2026-01-22 22:44:56,403 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:44:56,403 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:56,403 - DEBUG - Finished Request
+2026-01-22 22:44:58,871 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.9F6453133FB8427D686A0604FA913940.e.16305'}]}
+2026-01-22 22:44:59,268 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:44:59,268 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:59,268 - DEBUG - Finished Request
+2026-01-22 22:44:59,268 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:44:59,307 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:44:59,307 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.338905593A1105449832257B381FDBD0.e.19299"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:59,307 - DEBUG - Finished Request
+2026-01-22 22:44:59,307 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:44:59,343 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:44:59,345 - DEBUG - Finished Request
+2026-01-22 22:44:59,345 - INFO - 페이지 7: 12개 추가 (총 84개)
+2026-01-22 22:44:59,345 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:44:59,466 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:44:59,466 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.338905593A1105449832257B381FDBD0.e.19315"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:59,466 - DEBUG - Finished Request
+2026-01-22 22:44:59,466 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.338905593A1105449832257B381FDBD0.e.19315'}]}
+2026-01-22 22:44:59,479 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:44:59,479 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:44:59,479 - DEBUG - Finished Request
+2026-01-22 22:45:01,229 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.338905593A1105449832257B381FDBD0.e.19315'}]}
+2026-01-22 22:45:01,771 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:01,771 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:01,771 - DEBUG - Finished Request
+2026-01-22 22:45:01,772 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:45:01,804 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:01,804 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.CD49EC1BD23C1A06E645066ABA7A0569.e.20761"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:01,804 - DEBUG - Finished Request
+2026-01-22 22:45:01,805 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:45:01,849 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:01,851 - DEBUG - Finished Request
+2026-01-22 22:45:01,851 - INFO - 페이지 8: 12개 추가 (총 96개)
+2026-01-22 22:45:01,851 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:45:01,856 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:01,856 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.CD49EC1BD23C1A06E645066ABA7A0569.e.20764"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:01,856 - DEBUG - Finished Request
+2026-01-22 22:45:01,856 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.CD49EC1BD23C1A06E645066ABA7A0569.e.20764'}]}
+2026-01-22 22:45:01,859 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:01,859 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:01,859 - DEBUG - Finished Request
+2026-01-22 22:45:04,355 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.CD49EC1BD23C1A06E645066ABA7A0569.e.20764'}]}
+2026-01-22 22:45:05,042 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:05,042 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:05,042 - DEBUG - Finished Request
+2026-01-22 22:45:05,042 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:45:05,080 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:05,080 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.1F813D175BCEA6028BBEEFBB381878AE.e.22246"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:05,080 - DEBUG - Finished Request
+2026-01-22 22:45:05,080 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:45:05,180 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:05,182 - DEBUG - Finished Request
+2026-01-22 22:45:05,183 - INFO - 페이지 9: 12개 추가 (총 108개)
+2026-01-22 22:45:05,183 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:45:05,244 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:05,244 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.1F813D175BCEA6028BBEEFBB381878AE.e.22289"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:05,244 - DEBUG - Finished Request
+2026-01-22 22:45:05,244 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.1F813D175BCEA6028BBEEFBB381878AE.e.22289'}]}
+2026-01-22 22:45:05,299 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:05,299 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:05,299 - DEBUG - Finished Request
+2026-01-22 22:45:06,991 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.1F813D175BCEA6028BBEEFBB381878AE.e.22289'}]}
+2026-01-22 22:45:07,536 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:07,536 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:07,536 - DEBUG - Finished Request
+2026-01-22 22:45:07,536 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:45:07,573 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:07,573 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.CAAE6B058717A464453EE3E75887F202.e.23730"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:07,574 - DEBUG - Finished Request
+2026-01-22 22:45:07,574 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:45:07,622 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:07,622 - DEBUG - Remote response: status=200 | data={"value":[{"content":"8 years ago today i watched this with my father for the first time and here i am rewatching it with him, i love my father","date":"2024-12-02","rating":"10"},{"content":"Movie theaters should be playing this 24/7. Nothing will ever beat seeing it on the big screen for the first time.","date":"2026-01-06","rating":"10"},{"content":"Me and Stevie G on a Sci Fi spree\n\nNot much has changed since my first viewing, other than that I liked it less this time round.\n\nFor a film about the power of one of the strongest human emotions it is unbelievably hollow.\n\nIt is a cinematic emoticon, a one dimensional simplified representation of an emotion.\n\nIt is two and half hours of show and tell I will not put myself through again.","date":"2015-06-01","rating":"5"},{"content":"I really shouldn't even attempt to review this beast until I see it again... maybe even until I see it two more times, but oh well, I'm just gonna try to pour as much out as I can and hope that it doesn't sound idiotic. It's probably going to turn out much like my Nymphomaniac review: one giant, incoherent mess of a paragraph... but I suppose that's better than nothing or a sly one-liner (although sly one-liners are a lot… more","date":"2014-11-08","rating":"9"},{"content":"A Great American Novel of a movie, with a Great American Protagonist. Cooper is by turns stubborn and reckless, sentimental and curious, powered by a nuclear core of dogged belief in the human spirit, with himself (and his daughter) as its de facto avatars. Cooper is a scientist, but he's a red-blooded American, too, and he's often so beside himself that he can't resist waxing a little poetic; Interstellar operates in this spirit. There's the part of it that wants… more","date":"2024-12-09","rating":"평점 없음"},{"content":"Bitch shut the fuck up is that Renesmee...\n\n\nAnyways this was incredible! Wow!","date":"2025-01-10","rating":"10"},{"content":"Do not go gentle into that good night. Old age should burn and rave at close of day. Rage, rage against the dying of the light.\n\nIt’s something about the second Interstellar concludes that makes you stop functioning as a human being. Almost a surreal feeling. How is it possible for a film to look AND sound as good as this does? Being able to fully submerge in this within a packed 70MM IMAX theatre was transcendent, just wrenches your…\n\nmore","date":"2024-12-08","rating":"10"},{"content":"the video message scenes gets me every single time and I’m not sure if there was something in my eye but my eyes literally HURT so bad watching it like I can’t explain how much they stang but only for the duration of that scene and they were perfectly fine before and after it but during it my eyes were weeping in pain what the fuck I’m taking christopher nolan to court because that was too much how did he… more","date":"2018-11-28","rating":"10"},{"content":"thank you Christopher and/or Jonathan Nolan for TARS","date":"2024-12-16","rating":"8"},{"content":"With 21st century masterpieces like Memento, Batman Begins, The Prestige, The Dark Knight & Inception already to his name, Christopher Nolan has risen exponentially through the ranks of American film industry as one of the finest directors working today and in a career that spans just over 15 years has already cemented an impressive legacy with an incredibly devoted fan following that continues to grow with every subsequent feature.\n\nSet in a near future, Interstellar presents a world that's unable to… more","date":"2014-11-18","rating":"8"},{"content":"Stay.This one word, one comprised of four letters, sells the entire emotional tapestry of Christopher Nolan’s Interstellar. Trying to write an in-depth discussion on this masterwork of formidable proportions is extremely hard, so excuse me if this seems a little messy. Let me just state, flat out and honestly, that this film didn't just match my experience of my first viewing; it surpassed it. The emotion, the characters, the sets, the music, the visuals, the story, the themes, the… more","date":"2014-11-18T02:18:32.441Z","rating":"10"},{"content":"Holy shit...","date":"2023-12-05","rating":"9"}]} | headers=HTTPHeaderDict({'Content-Length': '4192', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:07,623 - DEBUG - Finished Request
+2026-01-22 22:45:07,623 - INFO - 페이지 10: 12개 추가 (총 120개)
+2026-01-22 22:45:07,623 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:45:07,628 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:07,628 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.CAAE6B058717A464453EE3E75887F202.e.23732"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:07,628 - DEBUG - Finished Request
+2026-01-22 22:45:07,628 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.CAAE6B058717A464453EE3E75887F202.e.23732'}]}
+2026-01-22 22:45:07,632 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:07,632 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:07,632 - DEBUG - Finished Request
+2026-01-22 22:45:09,457 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.CAAE6B058717A464453EE3E75887F202.e.23732'}]}
+2026-01-22 22:45:10,074 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:10,074 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:10,074 - DEBUG - Finished Request
+2026-01-22 22:45:10,074 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:45:10,108 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:10,108 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.C5FAFA53663751CD09700188C5D60F49.e.25156"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:10,108 - DEBUG - Finished Request
+2026-01-22 22:45:10,108 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:45:10,169 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:10,171 - DEBUG - Finished Request
+2026-01-22 22:45:10,171 - INFO - 페이지 11: 12개 추가 (총 132개)
+2026-01-22 22:45:10,171 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:45:10,176 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:10,176 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.C5FAFA53663751CD09700188C5D60F49.e.25158"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:10,176 - DEBUG - Finished Request
+2026-01-22 22:45:10,177 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.C5FAFA53663751CD09700188C5D60F49.e.25158'}]}
+2026-01-22 22:45:10,180 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:10,180 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:10,180 - DEBUG - Finished Request
+2026-01-22 22:45:13,170 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.C5FAFA53663751CD09700188C5D60F49.e.25158'}]}
+2026-01-22 22:45:13,568 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:13,568 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:13,569 - DEBUG - Finished Request
+2026-01-22 22:45:13,569 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:45:13,598 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:13,598 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.22D3CA95B87A46F2FB34C0D18D4736E5.e.26594"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:13,598 - DEBUG - Finished Request
+2026-01-22 22:45:13,598 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:45:13,646 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:13,648 - DEBUG - Finished Request
+2026-01-22 22:45:13,648 - INFO - 페이지 12: 12개 추가 (총 144개)
+2026-01-22 22:45:13,648 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:45:13,652 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:13,652 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.22D3CA95B87A46F2FB34C0D18D4736E5.e.26596"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:13,652 - DEBUG - Finished Request
+2026-01-22 22:45:13,652 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.22D3CA95B87A46F2FB34C0D18D4736E5.e.26596'}]}
+2026-01-22 22:45:13,655 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:13,655 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:13,655 - DEBUG - Finished Request
+2026-01-22 22:45:16,404 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.22D3CA95B87A46F2FB34C0D18D4736E5.e.26596'}]}
+2026-01-22 22:45:16,831 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:16,831 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:16,831 - DEBUG - Finished Request
+2026-01-22 22:45:16,831 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:45:16,893 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:16,894 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.A2A4CCA3D0A212EA62409EF7833EE9B6.e.28047"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:16,894 - DEBUG - Finished Request
+2026-01-22 22:45:16,894 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:45:16,898 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:16,900 - DEBUG - Finished Request
+2026-01-22 22:45:16,900 - INFO - 페이지 13: 12개 추가 (총 156개)
+2026-01-22 22:45:16,900 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:45:16,905 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:16,905 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.A2A4CCA3D0A212EA62409EF7833EE9B6.e.28048"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:16,905 - DEBUG - Finished Request
+2026-01-22 22:45:16,905 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.A2A4CCA3D0A212EA62409EF7833EE9B6.e.28048'}]}
+2026-01-22 22:45:16,908 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:16,908 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:16,909 - DEBUG - Finished Request
+2026-01-22 22:45:19,121 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.A2A4CCA3D0A212EA62409EF7833EE9B6.e.28048'}]}
+2026-01-22 22:45:19,499 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:19,499 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:19,499 - DEBUG - Finished Request
+2026-01-22 22:45:19,499 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:45:19,536 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:19,536 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.713C5CDEC7F4691E055896ABAAE1F027.e.29491"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:19,536 - DEBUG - Finished Request
+2026-01-22 22:45:19,536 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:45:19,584 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:19,586 - DEBUG - Finished Request
+2026-01-22 22:45:19,586 - INFO - 페이지 14: 12개 추가 (총 168개)
+2026-01-22 22:45:19,586 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:45:19,591 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:19,591 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.713C5CDEC7F4691E055896ABAAE1F027.e.29494"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:19,591 - DEBUG - Finished Request
+2026-01-22 22:45:19,591 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.713C5CDEC7F4691E055896ABAAE1F027.e.29494'}]}
+2026-01-22 22:45:19,595 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:19,595 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:19,595 - DEBUG - Finished Request
+2026-01-22 22:45:21,703 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.713C5CDEC7F4691E055896ABAAE1F027.e.29494'}]}
+2026-01-22 22:45:22,240 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:22,240 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:22,240 - DEBUG - Finished Request
+2026-01-22 22:45:22,240 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:45:22,259 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:22,259 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.D988EC0D5F2437E679262C565FE02366.e.30936"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:22,259 - DEBUG - Finished Request
+2026-01-22 22:45:22,259 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:45:22,337 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:22,339 - DEBUG - Finished Request
+2026-01-22 22:45:22,339 - INFO - 페이지 15: 12개 추가 (총 180개)
+2026-01-22 22:45:22,339 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:45:22,348 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:22,348 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.D988EC0D5F2437E679262C565FE02366.e.30938"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:22,348 - DEBUG - Finished Request
+2026-01-22 22:45:22,349 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.D988EC0D5F2437E679262C565FE02366.e.30938'}]}
+2026-01-22 22:45:22,351 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:22,351 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:22,351 - DEBUG - Finished Request
+2026-01-22 22:45:24,447 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.D988EC0D5F2437E679262C565FE02366.e.30938'}]}
+2026-01-22 22:45:24,827 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:24,827 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:24,827 - DEBUG - Finished Request
+2026-01-22 22:45:24,827 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:45:24,890 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:24,890 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.1C05B0D4A6E06C73B159E0D206F49E24.e.32382"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:24,890 - DEBUG - Finished Request
+2026-01-22 22:45:24,890 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:45:24,894 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:24,896 - DEBUG - Finished Request
+2026-01-22 22:45:24,896 - INFO - 페이지 16: 11개 추가 (총 191개)
+2026-01-22 22:45:24,897 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:45:24,901 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:24,901 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.1C05B0D4A6E06C73B159E0D206F49E24.e.32384"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:24,901 - DEBUG - Finished Request
+2026-01-22 22:45:24,901 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.1C05B0D4A6E06C73B159E0D206F49E24.e.32384'}]}
+2026-01-22 22:45:24,905 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:24,905 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:24,905 - DEBUG - Finished Request
+2026-01-22 22:45:26,978 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.1C05B0D4A6E06C73B159E0D206F49E24.e.32384'}]}
+2026-01-22 22:45:27,454 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:27,454 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:27,454 - DEBUG - Finished Request
+2026-01-22 22:45:27,454 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:45:27,479 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:27,479 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.17AC036B373C19FAFC63A05B92ECD826.e.33823"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:27,479 - DEBUG - Finished Request
+2026-01-22 22:45:27,479 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:45:27,540 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:27,542 - DEBUG - Finished Request
+2026-01-22 22:45:27,542 - INFO - 페이지 17: 11개 추가 (총 202개)
+2026-01-22 22:45:27,542 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:45:27,547 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:27,547 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.17AC036B373C19FAFC63A05B92ECD826.e.33841"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:27,547 - DEBUG - Finished Request
+2026-01-22 22:45:27,547 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.17AC036B373C19FAFC63A05B92ECD826.e.33841'}]}
+2026-01-22 22:45:27,552 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:27,552 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:27,552 - DEBUG - Finished Request
+2026-01-22 22:45:29,730 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.17AC036B373C19FAFC63A05B92ECD826.e.33841'}]}
+2026-01-22 22:45:30,200 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:30,200 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:30,200 - DEBUG - Finished Request
+2026-01-22 22:45:30,200 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:45:30,223 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:30,223 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.71192E78796075649D57540F55F5CCF4.e.35270"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:30,223 - DEBUG - Finished Request
+2026-01-22 22:45:30,223 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:45:30,268 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:30,270 - DEBUG - Finished Request
+2026-01-22 22:45:30,270 - INFO - 페이지 18: 12개 추가 (총 214개)
+2026-01-22 22:45:30,270 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:45:30,280 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:30,280 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.71192E78796075649D57540F55F5CCF4.e.35272"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:30,280 - DEBUG - Finished Request
+2026-01-22 22:45:30,280 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.71192E78796075649D57540F55F5CCF4.e.35272'}]}
+2026-01-22 22:45:30,283 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:30,283 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:30,283 - DEBUG - Finished Request
+2026-01-22 22:45:32,563 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.71192E78796075649D57540F55F5CCF4.e.35272'}]}
+2026-01-22 22:45:33,143 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:33,143 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:33,143 - DEBUG - Finished Request
+2026-01-22 22:45:33,144 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:45:33,180 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:33,180 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.90D998DB948752C044BB719E3927A2A2.e.36716"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:33,180 - DEBUG - Finished Request
+2026-01-22 22:45:33,180 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:45:33,231 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:33,233 - DEBUG - Finished Request
+2026-01-22 22:45:33,233 - INFO - 페이지 19: 12개 추가 (총 226개)
+2026-01-22 22:45:33,233 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:45:33,237 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:33,237 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.90D998DB948752C044BB719E3927A2A2.e.36718"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:33,237 - DEBUG - Finished Request
+2026-01-22 22:45:33,238 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.90D998DB948752C044BB719E3927A2A2.e.36718'}]}
+2026-01-22 22:45:33,242 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:33,242 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:33,242 - DEBUG - Finished Request
+2026-01-22 22:45:35,921 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.90D998DB948752C044BB719E3927A2A2.e.36718'}]}
+2026-01-22 22:45:36,429 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:36,429 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:36,429 - DEBUG - Finished Request
+2026-01-22 22:45:36,430 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:45:36,471 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:36,471 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.814F5BA9DFB2D972B30F11F295812072.e.38144"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:36,471 - DEBUG - Finished Request
+2026-01-22 22:45:36,471 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:45:36,542 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:36,544 - DEBUG - Finished Request
+2026-01-22 22:45:36,544 - INFO - 페이지 20: 12개 추가 (총 238개)
+2026-01-22 22:45:36,545 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:45:36,549 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:36,549 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.814F5BA9DFB2D972B30F11F295812072.e.38146"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:36,549 - DEBUG - Finished Request
+2026-01-22 22:45:36,549 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.814F5BA9DFB2D972B30F11F295812072.e.38146'}]}
+2026-01-22 22:45:36,552 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:36,552 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:36,552 - DEBUG - Finished Request
+2026-01-22 22:45:39,378 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.814F5BA9DFB2D972B30F11F295812072.e.38146'}]}
+2026-01-22 22:45:39,813 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:39,813 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:39,813 - DEBUG - Finished Request
+2026-01-22 22:45:39,813 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:45:39,849 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:39,849 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.3B0190807F7C61A0DDBC1CA30156AEFD.e.39581"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:39,849 - DEBUG - Finished Request
+2026-01-22 22:45:39,849 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:45:39,919 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:39,921 - DEBUG - Finished Request
+2026-01-22 22:45:39,921 - INFO - 페이지 21: 12개 추가 (총 250개)
+2026-01-22 22:45:39,921 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:45:39,929 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:39,930 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.3B0190807F7C61A0DDBC1CA30156AEFD.e.39583"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:39,930 - DEBUG - Finished Request
+2026-01-22 22:45:39,930 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.3B0190807F7C61A0DDBC1CA30156AEFD.e.39583'}]}
+2026-01-22 22:45:39,933 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:39,933 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:39,933 - DEBUG - Finished Request
+2026-01-22 22:45:42,230 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.3B0190807F7C61A0DDBC1CA30156AEFD.e.39583'}]}
+2026-01-22 22:45:42,773 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:42,773 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:42,773 - DEBUG - Finished Request
+2026-01-22 22:45:42,773 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:45:42,808 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:42,808 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.7C36AAE95E64E4B8CE778E525F858DD9.e.41061"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:42,808 - DEBUG - Finished Request
+2026-01-22 22:45:42,808 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:45:42,849 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:42,851 - DEBUG - Finished Request
+2026-01-22 22:45:42,851 - INFO - 페이지 22: 12개 추가 (총 262개)
+2026-01-22 22:45:42,851 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:45:42,904 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:42,904 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.7C36AAE95E64E4B8CE778E525F858DD9.e.41063"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:42,904 - DEBUG - Finished Request
+2026-01-22 22:45:42,905 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.7C36AAE95E64E4B8CE778E525F858DD9.e.41063'}]}
+2026-01-22 22:45:42,907 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:42,907 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:42,907 - DEBUG - Finished Request
+2026-01-22 22:45:44,567 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.7C36AAE95E64E4B8CE778E525F858DD9.e.41063'}]}
+2026-01-22 22:45:45,240 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:45,241 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:45,241 - DEBUG - Finished Request
+2026-01-22 22:45:45,241 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:45:45,280 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:45,280 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.FE8222446C58F9D41A64F537C53A7AFA.e.42487"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:45,280 - DEBUG - Finished Request
+2026-01-22 22:45:45,280 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:45:45,333 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:45,335 - DEBUG - Finished Request
+2026-01-22 22:45:45,335 - INFO - 페이지 23: 12개 추가 (총 274개)
+2026-01-22 22:45:45,335 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:45:45,341 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:45,341 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.FE8222446C58F9D41A64F537C53A7AFA.e.42489"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:45,341 - DEBUG - Finished Request
+2026-01-22 22:45:45,341 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.FE8222446C58F9D41A64F537C53A7AFA.e.42489'}]}
+2026-01-22 22:45:45,344 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:45,344 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:45,344 - DEBUG - Finished Request
+2026-01-22 22:45:47,611 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.FE8222446C58F9D41A64F537C53A7AFA.e.42489'}]}
+2026-01-22 22:45:48,193 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:48,194 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:48,194 - DEBUG - Finished Request
+2026-01-22 22:45:48,194 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:45:48,228 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:48,229 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.B81D340E3FF18A930FC563890AEA7996.e.43930"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:48,229 - DEBUG - Finished Request
+2026-01-22 22:45:48,229 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:45:48,281 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:48,282 - DEBUG - Finished Request
+2026-01-22 22:45:48,283 - INFO - 페이지 24: 12개 추가 (총 286개)
+2026-01-22 22:45:48,283 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:45:48,288 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:48,288 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.B81D340E3FF18A930FC563890AEA7996.e.43932"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:48,288 - DEBUG - Finished Request
+2026-01-22 22:45:48,288 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.B81D340E3FF18A930FC563890AEA7996.e.43932'}]}
+2026-01-22 22:45:48,292 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:48,292 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:48,292 - DEBUG - Finished Request
+2026-01-22 22:45:50,487 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.B81D340E3FF18A930FC563890AEA7996.e.43932'}]}
+2026-01-22 22:45:51,576 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:51,576 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:51,576 - DEBUG - Finished Request
+2026-01-22 22:45:51,576 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:45:51,599 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:51,600 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.FF6C80D24D873E3EDAD6A8CD5208C604.e.45384"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:51,600 - DEBUG - Finished Request
+2026-01-22 22:45:51,600 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:45:51,633 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:51,635 - DEBUG - Finished Request
+2026-01-22 22:45:51,635 - INFO - 페이지 25: 12개 추가 (총 298개)
+2026-01-22 22:45:51,635 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:45:51,639 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:51,639 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.FF6C80D24D873E3EDAD6A8CD5208C604.e.45386"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:51,639 - DEBUG - Finished Request
+2026-01-22 22:45:51,639 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.FF6C80D24D873E3EDAD6A8CD5208C604.e.45386'}]}
+2026-01-22 22:45:51,642 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:51,642 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:51,642 - DEBUG - Finished Request
+2026-01-22 22:45:53,640 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.FF6C80D24D873E3EDAD6A8CD5208C604.e.45386'}]}
+2026-01-22 22:45:54,218 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:54,219 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:54,219 - DEBUG - Finished Request
+2026-01-22 22:45:54,219 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:45:54,233 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:54,233 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.9A84ED668422B8B221BA4934FA2FA9DB.e.46808"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:54,233 - DEBUG - Finished Request
+2026-01-22 22:45:54,233 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:45:54,283 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:54,285 - DEBUG - Finished Request
+2026-01-22 22:45:54,285 - INFO - 페이지 26: 12개 추가 (총 310개)
+2026-01-22 22:45:54,285 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:45:54,302 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:54,302 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.9A84ED668422B8B221BA4934FA2FA9DB.e.46810"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:54,302 - DEBUG - Finished Request
+2026-01-22 22:45:54,302 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.9A84ED668422B8B221BA4934FA2FA9DB.e.46810'}]}
+2026-01-22 22:45:54,306 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:54,306 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:54,306 - DEBUG - Finished Request
+2026-01-22 22:45:57,107 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.9A84ED668422B8B221BA4934FA2FA9DB.e.46810'}]}
+2026-01-22 22:45:57,670 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:57,670 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:57,670 - DEBUG - Finished Request
+2026-01-22 22:45:57,670 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:45:57,693 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:57,693 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.C472CE61D32827EC65B60A36CE423BA2.e.48256"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:57,693 - DEBUG - Finished Request
+2026-01-22 22:45:57,693 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:45:57,738 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:57,740 - DEBUG - Finished Request
+2026-01-22 22:45:57,740 - INFO - 페이지 27: 12개 추가 (총 322개)
+2026-01-22 22:45:57,740 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:45:57,745 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:45:57,745 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.C472CE61D32827EC65B60A36CE423BA2.e.48258"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:57,745 - DEBUG - Finished Request
+2026-01-22 22:45:57,745 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.C472CE61D32827EC65B60A36CE423BA2.e.48258'}]}
+2026-01-22 22:45:57,749 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:45:57,749 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:45:57,749 - DEBUG - Finished Request
+2026-01-22 22:45:59,292 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.C472CE61D32827EC65B60A36CE423BA2.e.48258'}]}
+2026-01-22 22:46:01,125 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:01,125 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:01,126 - DEBUG - Finished Request
+2026-01-22 22:46:01,126 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:46:01,173 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:46:01,174 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.FCF03D5327943B471A4A14476D98BEFF.e.49747"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:01,174 - DEBUG - Finished Request
+2026-01-22 22:46:01,174 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:46:01,213 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:01,214 - DEBUG - Finished Request
+2026-01-22 22:46:01,215 - INFO - 페이지 28: 12개 추가 (총 334개)
+2026-01-22 22:46:01,215 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:46:01,219 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:46:01,219 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.FCF03D5327943B471A4A14476D98BEFF.e.49748"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:01,219 - DEBUG - Finished Request
+2026-01-22 22:46:01,219 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.FCF03D5327943B471A4A14476D98BEFF.e.49748'}]}
+2026-01-22 22:46:01,222 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:01,222 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:01,222 - DEBUG - Finished Request
+2026-01-22 22:46:03,412 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.FCF03D5327943B471A4A14476D98BEFF.e.49748'}]}
+2026-01-22 22:46:04,137 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:04,137 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:04,137 - DEBUG - Finished Request
+2026-01-22 22:46:04,137 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:46:04,174 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:46:04,174 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.6531CAE2BC5B1687CFB7292FCEB3900E.e.51167"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:04,174 - DEBUG - Finished Request
+2026-01-22 22:46:04,174 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:46:04,216 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:04,218 - DEBUG - Finished Request
+2026-01-22 22:46:04,218 - INFO - 페이지 29: 12개 추가 (총 346개)
+2026-01-22 22:46:04,218 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:46:04,231 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:46:04,232 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.6531CAE2BC5B1687CFB7292FCEB3900E.e.51169"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:04,232 - DEBUG - Finished Request
+2026-01-22 22:46:04,232 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.6531CAE2BC5B1687CFB7292FCEB3900E.e.51169'}]}
+2026-01-22 22:46:04,235 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:04,235 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:04,235 - DEBUG - Finished Request
+2026-01-22 22:46:05,988 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.6531CAE2BC5B1687CFB7292FCEB3900E.e.51169'}]}
+2026-01-22 22:46:06,728 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:06,728 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:06,728 - DEBUG - Finished Request
+2026-01-22 22:46:06,728 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:46:06,777 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:46:06,777 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.D7DE739F82FDBBE1841AA87A0E605DFD.e.52581"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:06,777 - DEBUG - Finished Request
+2026-01-22 22:46:06,778 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:46:06,781 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:06,783 - DEBUG - Finished Request
+2026-01-22 22:46:06,783 - INFO - 페이지 30: 12개 추가 (총 358개)
+2026-01-22 22:46:06,783 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:46:06,787 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:46:06,787 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.D7DE739F82FDBBE1841AA87A0E605DFD.e.52583"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:06,787 - DEBUG - Finished Request
+2026-01-22 22:46:06,787 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.D7DE739F82FDBBE1841AA87A0E605DFD.e.52583'}]}
+2026-01-22 22:46:06,791 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:06,791 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:06,791 - DEBUG - Finished Request
+2026-01-22 22:46:09,697 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.D7DE739F82FDBBE1841AA87A0E605DFD.e.52583'}]}
+2026-01-22 22:46:10,285 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:10,285 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:10,285 - DEBUG - Finished Request
+2026-01-22 22:46:10,285 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:46:10,310 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:46:10,310 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.FA0C35FD06C309C49558858939F27B1E.e.54031"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:10,310 - DEBUG - Finished Request
+2026-01-22 22:46:10,310 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:46:10,355 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:10,357 - DEBUG - Finished Request
+2026-01-22 22:46:10,357 - INFO - 페이지 31: 12개 추가 (총 370개)
+2026-01-22 22:46:10,357 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:46:10,364 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:46:10,364 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.FA0C35FD06C309C49558858939F27B1E.e.54033"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:10,364 - DEBUG - Finished Request
+2026-01-22 22:46:10,364 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.FA0C35FD06C309C49558858939F27B1E.e.54033'}]}
+2026-01-22 22:46:10,367 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:10,367 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:10,367 - DEBUG - Finished Request
+2026-01-22 22:46:12,756 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.FA0C35FD06C309C49558858939F27B1E.e.54033'}]}
+2026-01-22 22:46:13,216 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:13,216 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:13,216 - DEBUG - Finished Request
+2026-01-22 22:46:13,216 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:46:13,249 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:46:13,250 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.8915B615F32F71C781073F21B07A719B.e.55464"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:13,250 - DEBUG - Finished Request
+2026-01-22 22:46:13,250 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:46:13,295 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:13,297 - DEBUG - Finished Request
+2026-01-22 22:46:13,297 - INFO - 페이지 32: 12개 추가 (총 382개)
+2026-01-22 22:46:13,298 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:46:13,302 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:46:13,302 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.8915B615F32F71C781073F21B07A719B.e.55466"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:13,302 - DEBUG - Finished Request
+2026-01-22 22:46:13,302 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.8915B615F32F71C781073F21B07A719B.e.55466'}]}
+2026-01-22 22:46:13,305 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:13,305 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:13,305 - DEBUG - Finished Request
+2026-01-22 22:46:15,314 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.8915B615F32F71C781073F21B07A719B.e.55466'}]}
+2026-01-22 22:46:15,791 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:15,791 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:15,791 - DEBUG - Finished Request
+2026-01-22 22:46:15,791 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:46:15,827 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:46:15,827 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.FCCAE3CB7628786E6F71A20188E04C70.e.56910"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:15,827 - DEBUG - Finished Request
+2026-01-22 22:46:15,827 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:46:15,831 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:15,833 - DEBUG - Finished Request
+2026-01-22 22:46:15,833 - INFO - 페이지 33: 12개 추가 (총 394개)
+2026-01-22 22:46:15,833 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:46:15,837 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:46:15,837 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.FCCAE3CB7628786E6F71A20188E04C70.e.56911"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:15,837 - DEBUG - Finished Request
+2026-01-22 22:46:15,837 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.FCCAE3CB7628786E6F71A20188E04C70.e.56911'}]}
+2026-01-22 22:46:15,840 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:15,840 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:15,840 - DEBUG - Finished Request
+2026-01-22 22:46:18,746 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.FCCAE3CB7628786E6F71A20188E04C70.e.56911'}]}
+2026-01-22 22:46:19,311 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:19,312 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:19,312 - DEBUG - Finished Request
+2026-01-22 22:46:19,312 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:46:19,381 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:46:19,381 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.0FAD49DD98E67CCB028D0112EEE5C22B.e.58382"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:19,381 - DEBUG - Finished Request
+2026-01-22 22:46:19,381 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:46:19,424 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:19,426 - DEBUG - Finished Request
+2026-01-22 22:46:19,426 - INFO - 페이지 34: 12개 추가 (총 406개)
+2026-01-22 22:46:19,426 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:46:19,431 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:46:19,431 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.0FAD49DD98E67CCB028D0112EEE5C22B.e.58383"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:19,431 - DEBUG - Finished Request
+2026-01-22 22:46:19,431 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.0FAD49DD98E67CCB028D0112EEE5C22B.e.58383'}]}
+2026-01-22 22:46:19,435 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:19,435 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:19,435 - DEBUG - Finished Request
+2026-01-22 22:46:22,302 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.0FAD49DD98E67CCB028D0112EEE5C22B.e.58383'}]}
+2026-01-22 22:46:22,892 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:22,893 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:22,893 - DEBUG - Finished Request
+2026-01-22 22:46:22,893 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:46:22,927 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:46:22,927 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.F25A963DEBB7AF63C7D71F96B554B11C.e.59810"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:22,928 - DEBUG - Finished Request
+2026-01-22 22:46:22,928 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:46:22,988 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:22,990 - DEBUG - Finished Request
+2026-01-22 22:46:22,990 - INFO - 페이지 35: 12개 추가 (총 418개)
+2026-01-22 22:46:22,990 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:46:22,994 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:46:22,995 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.F25A963DEBB7AF63C7D71F96B554B11C.e.59827"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:22,995 - DEBUG - Finished Request
+2026-01-22 22:46:22,995 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.F25A963DEBB7AF63C7D71F96B554B11C.e.59827'}]}
+2026-01-22 22:46:22,998 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:22,998 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:22,998 - DEBUG - Finished Request
+2026-01-22 22:46:25,115 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.F25A963DEBB7AF63C7D71F96B554B11C.e.59827'}]}
+2026-01-22 22:46:25,687 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:25,687 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:25,687 - DEBUG - Finished Request
+2026-01-22 22:46:25,687 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:46:25,723 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:46:25,723 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.4F4D805F623BF611EEB481EB5F6AAE6D.e.61224"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:25,723 - DEBUG - Finished Request
+2026-01-22 22:46:25,723 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:46:25,755 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:25,757 - DEBUG - Finished Request
+2026-01-22 22:46:25,757 - INFO - 페이지 36: 12개 추가 (총 430개)
+2026-01-22 22:46:25,757 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:46:25,762 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:46:25,762 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.4F4D805F623BF611EEB481EB5F6AAE6D.e.61226"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:25,762 - DEBUG - Finished Request
+2026-01-22 22:46:25,762 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.4F4D805F623BF611EEB481EB5F6AAE6D.e.61226'}]}
+2026-01-22 22:46:25,765 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:25,765 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:25,765 - DEBUG - Finished Request
+2026-01-22 22:46:27,815 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.4F4D805F623BF611EEB481EB5F6AAE6D.e.61226'}]}
+2026-01-22 22:46:28,330 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:28,330 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:28,330 - DEBUG - Finished Request
+2026-01-22 22:46:28,330 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:46:28,366 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:46:28,367 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.EAE1E9550B3A7823A1352074547289CD.e.62689"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:28,367 - DEBUG - Finished Request
+2026-01-22 22:46:28,367 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:46:28,419 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:28,421 - DEBUG - Finished Request
+2026-01-22 22:46:28,421 - INFO - 페이지 37: 12개 추가 (총 442개)
+2026-01-22 22:46:28,421 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:46:28,426 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:46:28,426 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.EAE1E9550B3A7823A1352074547289CD.e.62691"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:28,426 - DEBUG - Finished Request
+2026-01-22 22:46:28,427 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.EAE1E9550B3A7823A1352074547289CD.e.62691'}]}
+2026-01-22 22:46:28,430 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:28,430 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:28,430 - DEBUG - Finished Request
+2026-01-22 22:46:30,980 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.EAE1E9550B3A7823A1352074547289CD.e.62691'}]}
+2026-01-22 22:46:31,446 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:31,446 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:31,447 - DEBUG - Finished Request
+2026-01-22 22:46:31,447 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:46:31,487 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:46:31,487 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.8A1FCFF1EBD5F1FB99FBC3ED7FFCE46D.e.64132"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:31,487 - DEBUG - Finished Request
+2026-01-22 22:46:31,487 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:46:31,521 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:31,522 - DEBUG - Finished Request
+2026-01-22 22:46:31,523 - INFO - 페이지 38: 12개 추가 (총 454개)
+2026-01-22 22:46:31,523 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:46:31,527 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:46:31,527 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.8A1FCFF1EBD5F1FB99FBC3ED7FFCE46D.e.64134"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:31,527 - DEBUG - Finished Request
+2026-01-22 22:46:31,527 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.8A1FCFF1EBD5F1FB99FBC3ED7FFCE46D.e.64134'}]}
+2026-01-22 22:46:31,530 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:31,530 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:31,530 - DEBUG - Finished Request
+2026-01-22 22:46:33,608 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.8A1FCFF1EBD5F1FB99FBC3ED7FFCE46D.e.64134'}]}
+2026-01-22 22:46:34,156 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:34,156 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:34,156 - DEBUG - Finished Request
+2026-01-22 22:46:34,156 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:46:34,196 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:46:34,196 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.21286B25C1677A5AF1F302863894FA9D.e.65568"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:34,197 - DEBUG - Finished Request
+2026-01-22 22:46:34,197 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:46:34,202 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:34,204 - DEBUG - Finished Request
+2026-01-22 22:46:34,204 - INFO - 페이지 39: 12개 추가 (총 466개)
+2026-01-22 22:46:34,205 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:46:34,209 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:46:34,209 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.21286B25C1677A5AF1F302863894FA9D.e.65581"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:34,209 - DEBUG - Finished Request
+2026-01-22 22:46:34,209 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.21286B25C1677A5AF1F302863894FA9D.e.65581'}]}
+2026-01-22 22:46:34,212 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:34,212 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:34,212 - DEBUG - Finished Request
+2026-01-22 22:46:36,093 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.21286B25C1677A5AF1F302863894FA9D.e.65581'}]}
+2026-01-22 22:46:36,538 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:36,538 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:36,538 - DEBUG - Finished Request
+2026-01-22 22:46:36,539 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:46:36,591 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:46:36,591 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.2FDA0754B3CF6DBBA288A9D10E348CC2.e.67012"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:36,591 - DEBUG - Finished Request
+2026-01-22 22:46:36,591 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:46:36,601 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:36,604 - DEBUG - Finished Request
+2026-01-22 22:46:36,604 - INFO - 페이지 40: 12개 추가 (총 478개)
+2026-01-22 22:46:36,604 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:46:36,608 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:46:36,608 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.2FDA0754B3CF6DBBA288A9D10E348CC2.e.67013"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:36,608 - DEBUG - Finished Request
+2026-01-22 22:46:36,608 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.2FDA0754B3CF6DBBA288A9D10E348CC2.e.67013'}]}
+2026-01-22 22:46:36,611 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:36,611 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:36,611 - DEBUG - Finished Request
+2026-01-22 22:46:38,286 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.2FDA0754B3CF6DBBA288A9D10E348CC2.e.67013'}]}
+2026-01-22 22:46:38,663 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:38,663 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:38,663 - DEBUG - Finished Request
+2026-01-22 22:46:38,663 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:46:38,709 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:46:38,709 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.FFDF3AFFCFDDD35C70E6A7B1B319D89B.e.68416"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:38,709 - DEBUG - Finished Request
+2026-01-22 22:46:38,709 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:46:38,713 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:38,714 - DEBUG - Finished Request
+2026-01-22 22:46:38,714 - INFO - 페이지 41: 12개 추가 (총 490개)
+2026-01-22 22:46:38,715 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.paginate-nextprev a.next'}
+2026-01-22 22:46:38,718 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:46:38,719 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.FFDF3AFFCFDDD35C70E6A7B1B319D89B.e.68417"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:38,719 - DEBUG - Finished Request
+2026-01-22 22:46:38,719 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "arguments[0].scrollIntoView({block: 'center'});", 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.FFDF3AFFCFDDD35C70E6A7B1B319D89B.e.68417'}]}
+2026-01-22 22:46:38,722 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:38,722 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:38,722 - DEBUG - Finished Request
+2026-01-22 22:46:40,505 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.14B041C75C7DD42CF0B0347386DE5B93.d.FFDF3AFFCFDDD35C70E6A7B1B319D89B.e.68417'}]}
+2026-01-22 22:46:40,905 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:40,905 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:40,906 - DEBUG - Finished Request
+2026-01-22 22:46:40,906 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/element {'using': 'css selector', 'value': 'div.listitem'}
+2026-01-22 22:46:40,943 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/element HTTP/1.1" 200 0
+2026-01-22 22:46:40,943 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.14B041C75C7DD42CF0B0347386DE5B93.d.E02809390C7B9800F3952913B151BBAF.e.69915"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-01-22 22:46:40,944 - DEBUG - Finished Request
+2026-01-22 22:46:40,944 - DEBUG - POST http://localhost:7608/session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync {'script': "\n        const reviews = [];\n        const items = document.querySelectorAll('div.listitem');\n      ...", 'args': []}
+2026-01-22 22:46:40,947 - DEBUG - http://localhost:7608 "POST /session/643a405e3b9ccc2ed611819fb39a5fbc/execute/sync HTTP/1.1" 200 0
+2026-01-22 22:46:40,949 - DEBUG - Finished Request
+2026-01-22 22:46:40,949 - INFO - 페이지 42: 10개 추가 (총 500개)
+2026-01-22 22:46:40,949 - INFO - 수집 종료. 총 소요시간: 125.1초
+2026-01-22 22:46:40,958 - INFO - 최종 저장 완료: ../../database\reviews_letterboxd.csv

@@ -5,12 +5,14 @@ import pandas as pd  # type: ignore
 from time import sleep, time
 from datetime import datetime
 
+# 핵심: undetected_chromedriver로 교체
 import undetected_chromedriver as uc # type: ignore
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, TimeoutException, StaleElementReferenceException
 
+# 기존 프로젝트 구조 임포트
 from review_analysis.crawling.base_crawler import BaseCrawler
 from utils.logger import setup_logger
 
@@ -54,7 +56,7 @@ class letterboxdCrawler(BaseCrawler):
         
         # 브라우저 실행 (드라이버 패치 자동 수행)
         # version_main을 지정하지 않아도 설치된 크롬 버전을 자동으로 찾습니다.
-        self.driver = uc.Chrome(options=options)
+        self.driver = uc.Chrome(options=options, version_main=143)
         
         # ★ UC는 아래와 같은 navigator.webdriver 우회 설정을 내부적으로 이미 수행합니다.
         # 따라서 별도의 execute_cdp_cmd 없이도 탐지 확률이 매우 낮습니다.

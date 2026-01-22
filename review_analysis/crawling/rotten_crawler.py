@@ -16,8 +16,8 @@ class RottenCrawler(BaseCrawler):
     def __init__(self, output_dir: str):
         super().__init__(output_dir)
         self.base_url = 'https://www.rottentomatoes.com/m/interstellar_2014/reviews/all-audience'
-        self.driver = None
-        self.reviews = []
+        self.driver: webdriver.Chrome | None = None
+        self.reviews: list[dict[str, str | float]] = []
         os.makedirs(output_dir, exist_ok=True)
 
     def start_browser(self):
@@ -43,6 +43,9 @@ class RottenCrawler(BaseCrawler):
             self.start_browser()
 
         try:
+            if self.driver is None:
+                raise RuntimeError("Driver failed to initialize")
+                
             self.driver.get(self.base_url)
             time.sleep(5)
 
@@ -80,6 +83,9 @@ class RottenCrawler(BaseCrawler):
             raise
 
     def _extract_reviews_from_page(self):
+        if self.driver is None:
+            return
+            
         try:
             review_elements = self.driver.find_elements(By.TAG_NAME, 'review-card')
 
@@ -122,6 +128,9 @@ class RottenCrawler(BaseCrawler):
             pass
 
     def _click_load_more(self) -> bool:
+        if self.driver is None:
+            return False
+            
         try:
             selectors = [
                 'rt-button[data-pagemediareviewsmanager="loadMoreBtn:click"]',
