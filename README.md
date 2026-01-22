@@ -20,6 +20,18 @@
 
 ![review length](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_length(Rotten%20Tomato).png)
 
+### 1.2 IDMB
+IMDb 리뷰 데이터의 전반적인 특성과 이상치를 파악하기 위해 다양한 시각화를 수행하였습니다.
+
+* 점수 분포
+<img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/5af483ca-9dce-4106-ac32-0a7beeb882d2" />
+- 특성  
+  - 별점이 9~10점 구간에 집중된 분포를 보입니다.  
+  - 전반적으로 영화에 대한 만족도가 높은 경향을 확인할 수 있습니다.
+- 이상치  
+  - 별점이 없는 경우를 0으로 처리한 데이터가 존재합니다.
+  - 정상 범위(1~10점)를 벗어나는 이상치 데이터는 총 35개로 확인되었습니다.
+ 
 
 ### 1.2 IMDB
 
@@ -28,10 +40,27 @@
 ![rating imdb](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/rating(IMDb).png)
 
 * 리뷰 수 추이
+<img width="1400" height="400" alt="image" src="https://github.com/user-attachments/assets/d308445e-4e83-46ae-bff6-7c2258a70807" />
+- 특성  
+  - 영화 개봉 시점은 2014년 11월입니다.  
+  - 2015년 이전 시점에 리뷰가 일시적으로 급증하는 구간이 관찰됩니다.  
+  - 이후에는 2026년까지 낮은 빈도로 꾸준히 리뷰가 생성됩니다.
 
-![review counts imdb](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_counts(IMDb).png)
+- 이상치  
+  - 개봉 이전(2014년 이전) 또는 미래 시점(2026년 이후)의 데이터는 발견되지 않았습니다.  
+  - 시계열 분석에 활용 가능한 데이터임을 확인하였습니다.
+
 
 * 리뷰 길이
+<img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/dac021fb-37fd-43a5-8338-bbf258b539e1" />
+- 특성  
+  - 대부분의 리뷰가 1,000자 미만에 집중된 Long-tail 분포를 보입니다.  
+  - 짧은 감상 위주의 리뷰가 다수를 차지합니다.
+
+- 이상치  
+  - 수천 자 이상의 긴 리뷰가 일부 존재합니다.  
+  - 5자 미만의 비정상적으로 짧은 리뷰는 존재하지 않았습니다.
+
 
 ![review length imdb](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_length(IMDb).png)
 
@@ -53,6 +82,12 @@
 ## 2. 전처리 / FE
 
 * 결측치 처리
+- IMDb: 별점, 리뷰 텍스트, 날짜 정보가 없는 행은 `dropna()`를 사용하여 제거
+
+
+* 이상치 처리
+- IMDb: 별점 0점 데이터 제거 & 리뷰 길이 5자 미만
+
 
     * 별점, 리뷰, 날짜 정보가 없는 행을 dropna()로 제거하였습니다.
 
@@ -62,7 +97,11 @@
     * 별점 0점 데이터 및 텍스트 길이가 극단적으로 짧거나 긴 리뷰를 제거하였습니다.
 
 * 텍스트 데이터 전처리
-
+- IMDb:
+  - 소문자 변환  
+    - 대소문자 차이로 인한 단어 중복을 방지하기 위해 모든 텍스트를 소문자로 변환하였습니다.
+  - 특수문자 제거  
+    - 정규표현식을 활용하여 영문자, 숫자, 공백, 문장 종결 부호를 제외한 특수문자를 제거하였습니다.
 
 
 * 파생 변수 생성
@@ -134,10 +173,10 @@ IMDb: 감성 지수의 스펙트럼이 가장 넓습니다. 이는 장문의 분
   
 |항목|내용|
 |---|---|
-|소속|
-|1지망 팀|
-|MBTI|
-|취미|
+|소속| 인공지능학과 24
+|1지망 팀| DS
+|MBTI| ISTP
+|취미| 음악듣기, 노래방가기
 
 
 </br>
