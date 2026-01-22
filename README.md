@@ -99,8 +99,6 @@ IMDb: 감성 지수의 스펙트럼이 가장 넓습니다. 이는 장문의 분
 
 * Review and Merged
 
-![review and merged](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/github/review_and_merged.png)
-
 
 ## 2. 팀 소개
 28기 8조는 정기준(팀장), 오상호, 황소현으로 구성되어있습니다.
@@ -118,10 +116,10 @@ IMDb: 감성 지수의 스펙트럼이 가장 넓습니다. 이는 장문의 분
   
 |항목|내용|
 |---|---|
-|소속|
-|1지망 팀|
-|MBTI|
-|취미|
+|소속| 응용통계학과 23
+|1지망 팀| DA
+|MBTI| INTJ
+|취미| 헬스, 사진, 맛집가기
 
 * 황소현
   
