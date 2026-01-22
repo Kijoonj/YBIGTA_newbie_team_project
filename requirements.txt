@@ -24,3 +24,4 @@ pandas-stubs
 bs4
 webdriver_manager
 undetected_chromedriver
+scikit-learn
