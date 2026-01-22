@@ -47,7 +47,7 @@ class letterboxdCrawler(BaseCrawler):
         options.add_experimental_option("excludeSwitches", ["enable-automation"])
         options.add_experimental_option('useAutomationExtension', False)
         
-        # ★ 성능 최적화: 불필요한 리소스 차단
+       
         prefs = {
             "credentials_enable_service": False,
             "profile.password_manager_enabled": False,
@@ -56,7 +56,7 @@ class letterboxdCrawler(BaseCrawler):
         }
         options.add_experimental_option("prefs", prefs)
         
-        # ★ 페이지 로드 전략: eager (DOM 준비되면 바로 진행)
+        
         options.page_load_strategy = 'eager'
         
         self.driver = webdriver.Chrome(options=options)
@@ -74,13 +74,12 @@ class letterboxdCrawler(BaseCrawler):
             '''
         })
         
-        # ★ implicit wait 줄이기 (명시적 wait 사용할 것)
+        
         self.driver.implicitly_wait(2)
         self.logger.info("브라우저 시작 완료 (최적화 모드)")
 
     def _extract_all_reviews_js(self):
         """
-        ★ 핵심 최적화: JavaScript로 모든 리뷰를 한 번에 추출
         DOM 접근을 최소화하여 속도 대폭 향상
         """
         js_script = """
@@ -180,11 +179,11 @@ class letterboxdCrawler(BaseCrawler):
         
         self.driver.get(self.target_url)
         
-        # ★ 캡챠 체크: 첫 페이지에서만 충분히 대기
+       
         self.logger.info("첫 페이지 로딩 중... (캡챠 확인)")
         sleep(2)
         
-        # 캡챠가 있으면 사용자가 수동으로 해결할 시간
+        
         if not self._wait_for_reviews(timeout=10):
             self.logger.warning("리뷰가 로드되지 않음. 캡챠를 수동으로 해결해주세요.")
             self.logger.info("30초 대기 중...")
@@ -202,7 +201,7 @@ class letterboxdCrawler(BaseCrawler):
             self.logger.info(f"페이지 {page_count} 크롤링 중... (현재: {len(self.reviews_data)}/500)")
             
             try:
-                # ★ JavaScript로 한 번에 모든 리뷰 추출
+                
                 reviews = self._extract_all_reviews_js()
                 
                 if not reviews:
@@ -222,7 +221,7 @@ class letterboxdCrawler(BaseCrawler):
                     
                     content = review['content'].replace('\n', ' ').strip()
                     
-                    # ★ 중복 체크 (content 해시)
+                    
                     content_hash = hash(content[:100])  # 앞 100자로 중복 체크
                     if content_hash in self.seen_contents:
                         continue
@@ -245,12 +244,12 @@ class letterboxdCrawler(BaseCrawler):
                 if len(self.reviews_data) >= 500:
                     break
                 
-                # ★ 다음 페이지 이동 (클릭 방식 - 캡챠 우회)
+                
                 if not self._click_next_page():
                     self.logger.info("마지막 페이지 도달")
                     break
                 
-                # ★ 리뷰 로딩 대기 (동적 대기)
+                
                 if not self._wait_for_reviews(timeout=10):
                     self.logger.warning("다음 페이지 로딩 지연")
                     sleep(3)

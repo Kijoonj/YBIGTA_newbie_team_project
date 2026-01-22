@@ -1,14 +1,15 @@
 from argparse import ArgumentParser
 from typing import Dict, Type
 from review_analysis.crawling.base_crawler import BaseCrawler
-from review_analysis.crawling.example_crawler import ExampleCrawler
 from review_analysis.crawling.imdb_crawler import ImdbCrawler
-
+from review_analysis.crawling.letterboxd_crawler import letterboxdCrawler
+from review_analysis.crawling.rotten_crawler import RottenCrawler
 
 # 모든 크롤링 클래스를 예시 형식으로 적어주세요. 
 CRAWLER_CLASSES: Dict[str, Type[BaseCrawler]] = {
-    "example": ExampleCrawler,
-    "imdb": ImdbCrawler,
+    #"rotten" : RottenCrawler,
+    #"imdb": ImdbCrawler,
+    "letterboxd" : letterboxdCrawler
 }
 
 def create_parser() -> ArgumentParser:
