@@ -13,10 +13,10 @@
 ![rating rotten](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/rating(Rotten%20Tomato).png)
 
 - 특성
-  - 9 ~ 10점 사이에 분포가 집중되어 영화에 대한 만족도가 높음을 확인할 수 있습니다.
+  - 긍정적 리뷰 (8~10점)에 대부분이 분포하며 그 중 10점이 가장 많습니다.
 
 - 이상치
-  - 모든 데이터는 0~10 범위 안에 있었고 이를 벗어나는 데이터는 없었습니다.
+  - 모든 데이터는 1~10 범위 안에 있었고 이를 벗어나는 데이터는 없었습니다.
 
 #### 리뷰 수 추이
 
@@ -185,5 +185,6 @@ IMDb: 감성 지수의 스펙트럼이 가장 넓습니다. 이는 장문의 분
 
 
 </br>
+
 
 
