@@ -7,8 +7,8 @@ from review_analysis.crawling.rotten_crawler import RottenCrawler
 
 # 모든 크롤링 클래스를 예시 형식으로 적어주세요. 
 CRAWLER_CLASSES: Dict[str, Type[BaseCrawler]] = {
-    #"rotten" : RottenCrawler,
-    #"imdb": ImdbCrawler,
+    "rotten" : RottenCrawler,
+    "imdb": ImdbCrawler,
     "letterboxd" : letterboxdCrawler
 }
 
