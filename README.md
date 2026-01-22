@@ -94,13 +94,30 @@ IMDb 리뷰 데이터의 전반적인 특성과 이상치를 파악하기 위해
 
 ![rating letterbox](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/rating(letterbox).png)
 
+- 특성
+  - 평점이 10점에 강하게 몰려 있음 (가장 높은 막대가 10점 구간)
+  - 전체적으로 고평점 편향(왼쪽 꼬리 분포) 형태를 보임
+
 #### 리뷰 수 추이
 
 ![review counts imdb](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_counts(letterbox).png)
 
+- 특성
+  - 대부분 날짜에서 리뷰 수가 1개 수준으로 평소엔 리뷰가 꾸준히 적게 발생
+  - 리뷰 발생이 연속적이지 않고 간헐적으로 긴 기간 동안 띄엄띄엄 있음
+- 이상치
+  - 2024년 초 10주년 기념 재개봉이라는 특수 이벤트로 큰 스파이크를 보임
+
 #### 리뷰 길이
 
 ![review length](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_length(letterbox).png)
+
+- 특성
+  - 중앙값은 270자 전후로 짧은 리뷰가 대부분임
+  - IQR구간이 80 ~ 450 으로 일반적인 리뷰 길이가 꽤 넓게 퍼져있음
+- 이상치
+  - 10자 이내의 매우 짧은 리뷰, 600자 이상의 리뷰가 관찰됨
+
 
 
 ## 2. 전처리 / FE
@@ -194,6 +211,7 @@ IMDb: 감성 지수의 스펙트럼이 가장 넓습니다. 이는 장문의 분
 
 
 </br>
+
 
 
 
