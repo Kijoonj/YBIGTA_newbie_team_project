@@ -1,51 +1,170 @@
-Movie Review Analysis Project
+</br>
 
-### 크롤링
-1. 데이터 소개
-본 프로젝트는 영화 '인터스텔라(Interstellar)'에 대한 실시간 리뷰 데이터를 수집하고 분석한 결과입니다. 
+# [4회차] EDA & FE 및 시각화 
 
-- 크롤링 사이트: IMDb Interstellar Reviews (https://www.imdb.com/title/tt0816692/reviews/?ref_=tt_ururv_genai_sm)
-- 데이터 개수: 각 600개의 리뷰 데이터 수집 완료
-- 데이터 형식: CSV (Comma-Separated Values) 
-    - date: 리뷰 작성일 (YYYY.MM.DD 형식으로 통일) 
-    - rating: 사용자가 부여한 별점 (1-10) 
-    - content: 전처리(특수문자 제거, 소문자화 등)가 완료된 리뷰 본문
+## 0. 개요 및 실행방법
 
-2. 실행방법
-명세서에 명시된 레포지토리 구조를 유지하며 아래 명령어를 통해 전처리를 실행할 수 있습니다.
-1) 가상환경(venv) 활성화
-- root 디렉토리: python -m venv venv
-- 의존성 설치: pip install -r requirements.txt
-2) 전처리 및 FE 실행
-python -m review_analysis.preprocessing.main --output_dir database --all
+## 1. 개별 사이트 EDA
 
-### EDA & FE
-1. 개별 분석 (EDA) 및 이상치 파악
-각 사이트에서 수집한 리뷰 데이터의 특성을 파악하기 위해 시각화를 진행하고 이상치를 식별하였습니다.
-1) 별점 분포 (Rating Distribution)
-    - 특성: 별점이 9-10점 사이에 매우 집중되어 있는 분포를 보입니다. 이는 해당 영화에 대한 전반적인 만족도가 높음을 의미합니다.
-    - 이상치: 별점이 없는 데이터들을 0으로 처리하였으므로 기준 범위(1-10)를 벗어나는 데이터는 총 35개로 파악되었습니다.
+### 1.1 Rotten Tomato
 
-2) 문장 수 분포 (Sentence Count)
-    - 특성: 대부분의 리뷰 글자 수가 1,000자 미만에 집중되어 있는 Long-tail 분포를 보입니다.
-    - 이상치: 길이 하한 이상치(5자 미만)에 해당하는 값은 없었습니다.
+* 점수 분포
 
-3) 날짜별 리뷰 추이 (Date Distribution)
-    - 특성: 개봉일은 2014년 11월이며 2015년 이전 시점에 리뷰가 일시적으로 폭발한 시점이 있습니다. 이후 2026년까지는 낮은 빈도로 꾸준히 리뷰가 생성되는 양상을 보입니다.
-    - 이상치 파악: 개봉년도 (2014년) 전의 데이터나 미래 날짜 데이터 (2026년 이후)는 발견되지 않았으며, 시계열 분석에 적합한 데이터임을 확인하였습니다.
+![rating rotten](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/rating(Rotten%20Tomato).png)
 
-2. 전처리 및 FE(Feature Engineering) 과정 설명
-데이터 품질 향상과 모델링 준비를 위해 다음 과정을 수행하였습니다.
-1) 결측치 및 이상치 처리
-    - 결측치: 별점, 리뷰, 날짜 정보가 없는 행을 dropna()로 제거하였습니다.
-    - 이상치: 별점 0점 데이터 및 텍스트 길이가 극단적으로 짧거나 긴 리뷰를 제거하였습니다.
+* 리뷰 수 추이
 
-2) 텍스트 데이터 전처리
-    - 소문자 변환: 영문 텍스트의 대소문자 차이로 인해 동일 단어가 다르게 인식되는 것을 방지하기 위해 전체 텍스트를 소문자로 변환하였습니다.
-    - 특수문자 및 노이즈 제거: 정규 표현식을 활용하여 영문, 숫자, 공백, 문장종결부호를 제외한 나머지 특수문자를 제거하였습니다.
+![review counts rotten](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_counts(Rotten%20Tomato).png)
 
-3) 파생 변수 생성 (Feature Engineering)
-    - 문장 수: 리뷰 언어에 따라 글자 수 데이터에는 차이가 발생할 것을 고려하여 '문장 수' 변수를 새롭게 생성하였습니다. 정규표현식을 활용해 문장 종결 부호를 기준으로 카운트하였습니다.
+* 리뷰 길이
 
-4) 텍스트 벡터화
-    - TF-IDF: 여러 리뷰에서 공통적으로 나타나는 단어의 가중치를 조절하는 TF-IDF(Term Frequency-Inverse Document Frequency) 방식을 사용하여 텍스트 데이터를 수치화하였습니다.
+![review length](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_length(Rotten%20Tomato).png)
+
+
+### 1.2 IMDB
+
+* 점수 분포
+IMDb 리뷰 데이터의 전반적인 특성과 이상치를 파악하기 위해 다양한 시각화를 수행하였습니다.
+
+![rating imdb](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/rating(IMDb).png)
+
+- 특성  
+  - 별점이 9~10점 구간에 집중된 분포를 보입니다.  
+  - 전반적으로 영화에 대한 만족도가 높은 경향을 확인할 수 있습니다.
+- 이상치  
+  - 별점이 없는 경우를 0으로 처리한 데이터가 존재합니다.
+  - 정상 범위(1~10점)를 벗어나는 이상치 데이터는 총 35개로 확인되었습니다.
+
+* 리뷰 수 추이
+
+![review counts imdb](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_counts(IMDb).png)
+
+- 특성  
+  - 영화 개봉 시점은 2014년 11월입니다.  
+  - 2015년 이전 시점에 리뷰가 일시적으로 급증하는 구간이 관찰됩니다.  
+  - 이후에는 2026년까지 낮은 빈도로 꾸준히 리뷰가 생성됩니다.
+
+- 이상치  
+  - 개봉 이전(2014년 이전) 또는 미래 시점(2026년 이후)의 데이터는 발견되지 않았습니다.  
+  - 시계열 분석에 활용 가능한 데이터임을 확인하였습니다.
+
+
+* 리뷰 길이
+
+![review length imdb](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_length(IMDb).png)
+
+- 특성  
+  - 대부분의 리뷰가 1,000자 미만에 집중된 Long-tail 분포를 보입니다.  
+  - 짧은 감상 위주의 리뷰가 다수를 차지합니다.
+
+- 이상치  
+  - 수천 자 이상의 긴 리뷰가 일부 존재합니다.  
+  - 5자 미만의 비정상적으로 짧은 리뷰는 존재하지 않았습니다.
+
+
+### 1.3 LetterBox
+
+* 점수 분포
+
+![rating letterbox](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/rating(letterbox).png)
+
+* 리뷰 수 추이
+
+![review counts imdb](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_counts(letterbox).png)
+
+* 리뷰 길이
+
+![review length](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_length(letterbox).png)
+
+
+## 2. 전처리 / FE
+
+* 결측치 처리
+
+    * 별점, 리뷰, 날짜 정보가 없는 행을 dropna()로 제거하였습니다.
+
+
+* 이상치 처리
+
+    * 별점 0점 데이터 및 텍스트 길이가 극단적으로 짧거나 긴 리뷰를 제거하였습니다.
+
+* 텍스트 데이터 전처리
+
+
+
+* 파생 변수 생성
+
+  * ```sentence_count``` : 리뷰 text 에서 문장의 수를 추출.
+
+* 텍스트 벡터화
+
+  * TF-IDF를 사용해 단어를 벡터화
+ 
+  * ```max_features``` = 2000 으로 설정
+
+
+
+## 3. 비교분석
+![비교분석1](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/%EB%B9%84%EA%B5%90%EB%B6%84%EC%84%9D_1.png))
+연도별 리뷰 개수를 확인한 결과, Rotten Tomatoes의 경우 최근의 리뷰 위주로 크롤링되어 전체 시계열 분석 시 왜곡이 발생할 가능성이 파악되었습니다.
+이를 해결하기 위해 전체 기간(2014-2026)을 다루는 'Broad Range' 분석과 더불어, 데이터가 밀집된 최근 시간 범위(2024-2026)에 대해 별도의 'Tight Range' 시계열 분석을 병행하여 분석의 정확도를 높였습니다.
+Tight Range에서 2024년 12월, 전 플랫폼에서 리뷰 수가 동시 다발적으로 급증하는 구간이 관찰됩니다. 이는 개봉 10주년 기념 재상영이 대중의 관심을 다시 집중시키는 강력한 기폭제였음을 시사합니다. 특히 최근 데이터 위주인 Rotten Tomatoes에서도 이 시기를 기점으로 지속적인 리뷰 유입이 확인됩니다.
+
+![비교분석2](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/%EB%B9%84%EA%B5%90%EB%B6%84%EC%84%9D_2.png)
+감성 지수 분포 분석 결과입니다.
+Rotten Tomatoes: 최근 유입된 팬층의 영향으로 감성 분포가 긍정적인 영역에 매우 좁게 밀집되어 있습니다. 비판보다는 '명작에 대한 확인' 위주의 리뷰가 주를 이룹니다.
+Letterboxd: 감정 단어 노출 빈도는 낮으나 이는 비평가적 어조를 사용하는 사용자 특성에 기인하며, 전반적으로 중립 이상의 긍정적 기조를 유지합니다.
+IMDb: 감성 지수의 스펙트럼이 가장 넓습니다. 이는 장문의 분석글이 많아 긍정과 부정이 혼재된 복합적인 평가가 이루어지고 있음을 나타냅니다.
+
+
+--------------------
+
+# [4회차] Github 협업 및 자기소개
+
+## 1. Github 협업 
+
+* Branch Protection
+
+![branch protection](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/github/branch_protection.png)
+
+* Push Rejected
+
+![push rejected](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/github/push_rejected.png)
+
+* Review and Merged
+  
+![review and merged](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/github/review_and_merged.png)
+
+
+## 2. 팀 소개
+28기 8조는 정기준(팀장), 오상호, 황소현으로 구성되어있습니다.
+
+* 정기준
+  
+|항목|내용|
+|---|---|
+|소속| QRM 20 
+|1지망 팀| DE
+|MBTI| INTJ
+|취미| 기타, 사진
+
+* 오상호
+  
+|항목|내용|
+|---|---|
+|소속| 응용통계학과 23
+|1지망 팀| DA
+|MBTI| INTJ
+|취미| 헬스, 사진, 맛집가기
+
+* 황소현
+  
+|항목|내용|
+|---|---|
+|소속| 인공지능학과 24
+|1지망 팀| DS
+|MBTI| ISTP
+|취미| 음악듣기, 노래방가기
+
+
+</br>
