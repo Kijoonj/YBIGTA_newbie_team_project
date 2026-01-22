@@ -8,22 +8,22 @@
 
 ### 1.1 Rotten Tomato
 
-* 점수 분포
+#### 점수 분포
 
 ![rating rotten](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/rating(Rotten%20Tomato).png)
 
-* 리뷰 수 추이
+#### 리뷰 수 추이
 
 ![review counts rotten](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_counts(Rotten%20Tomato).png)
 
-* 리뷰 길이
+#### 리뷰 길이
 
 ![review length](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_length(Rotten%20Tomato).png)
 
 
 ### 1.2 IMDB
 
-* 점수 분포
+#### 점수 분포
 IMDb 리뷰 데이터의 전반적인 특성과 이상치를 파악하기 위해 다양한 시각화를 수행하였습니다.
 
 ![rating imdb](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/rating(IMDb).png)
@@ -35,7 +35,7 @@ IMDb 리뷰 데이터의 전반적인 특성과 이상치를 파악하기 위해
   - 별점이 없는 경우를 0으로 처리한 데이터가 존재합니다.
   - 정상 범위(1~10점)를 벗어나는 이상치 데이터는 총 35개로 확인되었습니다.
 
-* 리뷰 수 추이
+#### 리뷰 수 추이
 
 ![review counts imdb](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_counts(IMDb).png)
 
@@ -49,7 +49,7 @@ IMDb 리뷰 데이터의 전반적인 특성과 이상치를 파악하기 위해
   - 시계열 분석에 활용 가능한 데이터임을 확인하였습니다.
 
 
-* 리뷰 길이
+#### 리뷰 길이
 
 ![review length imdb](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_length(IMDb).png)
 
@@ -64,15 +64,15 @@ IMDb 리뷰 데이터의 전반적인 특성과 이상치를 파악하기 위해
 
 ### 1.3 LetterBox
 
-* 점수 분포
+#### 점수 분포
 
 ![rating letterbox](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/rating(letterbox).png)
 
-* 리뷰 수 추이
+#### 리뷰 수 추이
 
 ![review counts imdb](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_counts(letterbox).png)
 
-* 리뷰 길이
+#### 리뷰 길이
 
 ![review length](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_length(letterbox).png)
 
@@ -168,3 +168,4 @@ IMDb: 감성 지수의 스펙트럼이 가장 넓습니다. 이는 장문의 분
 
 
 </br>
+
