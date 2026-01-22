@@ -188,8 +188,18 @@ IMDb: 감성 지수의 스펙트럼이 가장 넓습니다. 이는 장문의 분
 ![push rejected](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/github/push_rejected.png)
 
 * Review and Merged
+
+* 오상호
   
 ![review and merged](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/github/review_and_merged.png)
+
+* 황소현
+    
+![review and merged 황소현](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/github/review_and_merged_%ED%99%A9%EC%86%8C%ED%98%84.png)
+
+* 정기준
+    
+![review and merged 정기준](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/github/review_and_merged_%EC%A0%95%EA%B8%B0%EC%A4%80.png)
 
 
 ## 2. 팀 소개
@@ -224,6 +234,7 @@ IMDb: 감성 지수의 스펙트럼이 가장 넓습니다. 이는 장문의 분
 
 
 </br>
+
 
 
 
