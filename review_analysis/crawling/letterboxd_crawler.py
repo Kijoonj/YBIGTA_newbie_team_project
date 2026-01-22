@@ -5,14 +5,12 @@ import pandas as pd  # type: ignore
 from time import sleep, time
 from datetime import datetime
 
-# 핵심: undetected_chromedriver로 교체
-import undetected_chromedriver as uc
+import undetected_chromedriver as uc # type: ignore
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, TimeoutException, StaleElementReferenceException
 
-# 기존 프로젝트 구조 임포트
 from review_analysis.crawling.base_crawler import BaseCrawler
 from utils.logger import setup_logger
 
