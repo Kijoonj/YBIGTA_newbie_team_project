@@ -8,36 +8,37 @@
 
 ### 1.1 Rotten Tomato
 
-#### 점수 분포
+* 점수 분포
 
 ![rating rotten](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/rating(Rotten%20Tomato).png)
 
-#### 리뷰 수 추이
+* 리뷰 수 추이
 
 ![review counts rotten](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_counts(Rotten%20Tomato).png)
 
-#### 리뷰 길이
+* 리뷰 길이
 
 ![review length](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_length(Rotten%20Tomato).png)
 
 
-
 ### 1.2 IMDB
 
-#### 점수 분포
+* 점수 분포
+IMDb 리뷰 데이터의 전반적인 특성과 이상치를 파악하기 위해 다양한 시각화를 수행하였습니다.
 
 ![rating imdb](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/rating(IMDb).png)
 
 - 특성  
   - 별점이 9~10점 구간에 집중된 분포를 보입니다.  
   - 전반적으로 영화에 대한 만족도가 높은 경향을 확인할 수 있습니다.
-  
 - 이상치  
-    - 별점이 없는 경우를 0으로 처리한 데이터가 존재합니다.
-    - 정상 범위(1~10점)를 벗어나는 이상치 데이터는 총 35개로 확인되었습니다.
+  - 별점이 없는 경우를 0으로 처리한 데이터가 존재합니다.
+  - 정상 범위(1~10점)를 벗어나는 이상치 데이터는 총 35개로 확인되었습니다.
 
-#### 리뷰 수 추이
-![review counts imdb](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_length(IMDb).png)
+* 리뷰 수 추이
+
+![review counts imdb](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_counts(IMDb).png)
+
 - 특성  
   - 영화 개봉 시점은 2014년 11월입니다.  
   - 2015년 이전 시점에 리뷰가 일시적으로 급증하는 구간이 관찰됩니다.  
@@ -48,8 +49,8 @@
   - 시계열 분석에 활용 가능한 데이터임을 확인하였습니다.
 
 
-#### 리뷰 길이
-  
+* 리뷰 길이
+
 ![review length imdb](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_length(IMDb).png)
 
 - 특성  
@@ -63,15 +64,15 @@
 
 ### 1.3 LetterBox
 
-#### 점수 분포
+* 점수 분포
 
 ![rating letterbox](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/rating(letterbox).png)
 
-#### 리뷰 수 추이
+* 리뷰 수 추이
 
 ![review counts imdb](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_counts(letterbox).png)
 
-#### 리뷰 길이
+* 리뷰 길이
 
 ![review length](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_length(letterbox).png)
 
@@ -79,12 +80,6 @@
 ## 2. 전처리 / FE
 
 * 결측치 처리
-- IMDb: 별점, 리뷰 텍스트, 날짜 정보가 없는 행은 `dropna()`를 사용하여 제거
-
-
-* 이상치 처리
-- IMDb: 별점 0점 데이터 제거 & 리뷰 길이 5자 미만
-
 
     * 별점, 리뷰, 날짜 정보가 없는 행을 dropna()로 제거하였습니다.
 
@@ -94,11 +89,7 @@
     * 별점 0점 데이터 및 텍스트 길이가 극단적으로 짧거나 긴 리뷰를 제거하였습니다.
 
 * 텍스트 데이터 전처리
-- IMDb:
-  - 소문자 변환  
-    - 대소문자 차이로 인한 단어 중복을 방지하기 위해 모든 텍스트를 소문자로 변환하였습니다.
-  - 특수문자 제거  
-    - 정규표현식을 활용하여 영문자, 숫자, 공백, 문장 종결 부호를 제외한 특수문자를 제거하였습니다.
+
 
 
 * 파생 변수 생성
