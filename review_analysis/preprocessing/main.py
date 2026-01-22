@@ -6,7 +6,7 @@ from review_analysis.preprocessing.base_processor import BaseDataProcessor
 from review_analysis.preprocessing.example_processor import ExampleProcessor
 from review_analysis.preprocessing.letterboxd_processor import LetterboxdProcessor
 from review_analysis.preprocessing.imdb_processor import ImdbDataProcessor
-
+from review_analysis.preprocessing.rotten_processor import RottenProcessor
 
 
 # 모든 preprocessing 클래스를 예시 형식으로 적어주세요. 
@@ -15,11 +15,12 @@ PREPROCESS_CLASSES: Dict[str, Type[BaseDataProcessor]] = {
     "reviews_example": ExampleProcessor,
     "reviews_letterboxd": LetterboxdProcessor,
     "reviews_imdb": ImdbDataProcessor,
+    "reviews_rotten": RottenProcessor
     # key는 크롤링한 csv파일 이름으로 적어주세요! ex. reviews_naver.csv -> reviews_naver
 }
 
-REVIEW_COLLECTIONS = glob.glob(os.path.join("database", "reviews_*.csv"))
-
+REVIEW_COLLECTIONS = glob.glob(os.path.join("..","..","database", "reviews_*.csv"))
+print(REVIEW_COLLECTIONS)
 def create_parser() -> ArgumentParser:
     parser = ArgumentParser()
     parser.add_argument('-o', '--output_dir', type=str, required=False, default = "../../database", help="Output file dir. Example: ../../database")
