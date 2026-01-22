@@ -8,39 +8,36 @@
 
 ### 1.1 Rotten Tomato
 
-* 점수 분포
+#### 점수 분포
 
 ![rating rotten](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/rating(Rotten%20Tomato).png)
 
-* 리뷰 수 추이
+#### 리뷰 수 추이
 
 ![review counts rotten](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_counts(Rotten%20Tomato).png)
 
-* 리뷰 길이
+#### 리뷰 길이
 
 ![review length](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_length(Rotten%20Tomato).png)
 
-### 1.2 IDMB
-IMDb 리뷰 데이터의 전반적인 특성과 이상치를 파악하기 위해 다양한 시각화를 수행하였습니다.
 
-* 점수 분포
-<img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/5af483ca-9dce-4106-ac32-0a7beeb882d2" />
-- 특성  
-  - 별점이 9~10점 구간에 집중된 분포를 보입니다.  
-  - 전반적으로 영화에 대한 만족도가 높은 경향을 확인할 수 있습니다.
-- 이상치  
-  - 별점이 없는 경우를 0으로 처리한 데이터가 존재합니다.
-  - 정상 범위(1~10점)를 벗어나는 이상치 데이터는 총 35개로 확인되었습니다.
- 
 
 ### 1.2 IMDB
 
-* 점수 분포
+#### 점수 분포
 
 ![rating imdb](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/rating(IMDb).png)
 
-* 리뷰 수 추이
-<img width="1400" height="400" alt="image" src="https://github.com/user-attachments/assets/d308445e-4e83-46ae-bff6-7c2258a70807" />
+- 특성  
+  - 별점이 9~10점 구간에 집중된 분포를 보입니다.  
+  - 전반적으로 영화에 대한 만족도가 높은 경향을 확인할 수 있습니다.
+  
+- 이상치  
+    - 별점이 없는 경우를 0으로 처리한 데이터가 존재합니다.
+    - 정상 범위(1~10점)를 벗어나는 이상치 데이터는 총 35개로 확인되었습니다.
+
+#### 리뷰 수 추이
+![review counts imdb](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_length(IMDb).png)
 - 특성  
   - 영화 개봉 시점은 2014년 11월입니다.  
   - 2015년 이전 시점에 리뷰가 일시적으로 급증하는 구간이 관찰됩니다.  
@@ -51,8 +48,10 @@ IMDb 리뷰 데이터의 전반적인 특성과 이상치를 파악하기 위해
   - 시계열 분석에 활용 가능한 데이터임을 확인하였습니다.
 
 
-* 리뷰 길이
-<img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/dac021fb-37fd-43a5-8338-bbf258b539e1" />
+#### 리뷰 길이
+  
+![review length imdb](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_length(IMDb).png)
+
 - 특성  
   - 대부분의 리뷰가 1,000자 미만에 집중된 Long-tail 분포를 보입니다.  
   - 짧은 감상 위주의 리뷰가 다수를 차지합니다.
@@ -62,19 +61,17 @@ IMDb 리뷰 데이터의 전반적인 특성과 이상치를 파악하기 위해
   - 5자 미만의 비정상적으로 짧은 리뷰는 존재하지 않았습니다.
 
 
-![review length imdb](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_length(IMDb).png)
-
 ### 1.3 LetterBox
 
-* 점수 분포
+#### 점수 분포
 
 ![rating letterbox](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/rating(letterbox).png)
 
-* 리뷰 수 추이
+#### 리뷰 수 추이
 
 ![review counts imdb](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_counts(letterbox).png)
 
-* 리뷰 길이
+#### 리뷰 길이
 
 ![review length](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/review_analysis/plots/review_length(letterbox).png)
 
