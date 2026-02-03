@@ -1,0 +1,14 @@
+# Database Configuration
+POSTGRES_DB=tododb
+POSTGRES_USER=todouser
+POSTGRES_PASSWORD=todopass
+
+# Backend Configuration
+DB_HOST=db
+DB_PORT=5432
+DB_NAME=tododb
+DB_USER=todouser
+DB_PASSWORD=todopass
+
+# CORS Configuration
+ALLOWED_ORIGINS=http://localhost:8080,http://localhost:3000
