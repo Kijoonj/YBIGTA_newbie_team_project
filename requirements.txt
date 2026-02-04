@@ -27,3 +27,4 @@ undetected_chromedriver
 scikit-learn
 pytest
 sqlalchemy
+pymongo
