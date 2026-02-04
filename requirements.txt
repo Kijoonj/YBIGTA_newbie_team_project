@@ -28,3 +28,5 @@ scikit-learn
 pytest
 sqlalchemy
 pymongo
+pymysql
+cryptography
