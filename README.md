@@ -6,8 +6,7 @@
 - API ENDPOINTS
 
 - Github Action
-
-- 
+![github_action](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/aws/github_action.png?raw=true) 
 
 # [4회차] Crawling & EDA & FE 및 시각화 
 
@@ -269,6 +268,7 @@ IMDb: 감성 지수의 스펙트럼이 가장 넓습니다. 이는 장문의 분
 
 
 </br>
+
 
 
 
