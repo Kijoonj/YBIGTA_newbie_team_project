@@ -37,22 +37,7 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            # 1. 실행 중인 컨테이너가 있으면 멈추고 삭제 (에러 무시)
             docker stop my-container || true
             docker rm my-container || true
-            
-            # 2. 기존 이미지 삭제 (용량 절약)
-            docker rmi ${{ secrets.DOCKER_USERNAME }}/ybigta_team_assignment:latest || true
-            
-            # 3. 새 이미지 다운로드
             docker pull ${{ secrets.DOCKER_USERNAME }}/ybigta_team_assignment:latest
-            
-            # 4. 새 컨테이너 실행 (환경변수 주입 중요!)
-            docker run -d --name my-container \
-              -p 8000:8000 \
-              -e MYSQL_HOST=${{ secrets.AWS_DB_HOST }} \
-              -e MYSQL_PASSWORD=${{ secrets.AWS_DB_PASSWORD }} \
-              -e MYSQL_USER=${{ secrets.AWS_DB_USER }} \
-              -e MYSQL_DB=${{ secrets.AWS_DB_NAME }} \
-              -e MONGO_URL=${{ secrets.MONGO_URL }} \
-              ${{ secrets.DOCKER_USERNAME }}/ybigta_team_assignment:latest
+            docker run -d --name my-container -p 8000:8000 -e MYSQL_HOST=${{ secrets.AWS_DB_HOST }} -e MYSQL_PASSWORD=${{ secrets.AWS_DB_PASSWORD }} -e MYSQL_USER=${{ secrets.AWS_DB_USER }} -e MYSQL_DB=${{ secrets.AWS_DB_NAME }} -e MONGO_URL=${{ secrets.MONGO_URL }} ${{ secrets.DOCKER_USERNAME }}/ybigta_team_assignment:latest
