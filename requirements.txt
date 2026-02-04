@@ -30,3 +30,4 @@ sqlalchemy
 pymongo
 pymysql
 cryptography
+python-dotenv
