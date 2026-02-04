@@ -4,27 +4,45 @@
 
 ## 0. 개요 및 실행방법
 
-- 인터스텔라(2014)에 대한 ```rating```, ```review_counts```, ```review_length``` 를 다음 세 사이트를 활용하여 크롤링했고 총 데이터는 1600개 입니다.
+- 인터스텔라(2014)에 대한 ```rating```, ```review_counts```, ```review_length``` 를 다음 세 사이트를 활용하여 크롤링했습니다.
   
-  - Rotten Tomatoes(데이터 500개 수집): https://www.rottentomatoes.com/
-  - IMDb: https(데이터 600개 수집): https://www.imdb.com/
-  - LetterBoxd(데이터 500개 수집): https://letterboxd.com/
-
-- crawling 및 prerocessor 실행 방법
-  - 공통
-    - 가상환경 실행: ```python -m venv .venv```
-    - 의존성 설치: ```pip install -r requirements.txt```
-    - PYTHONPATH 설정: ```$env:PYTHONPATH = "C:\Users\...\YBIGTA_newbie_team_project"``` 를 통해 프로젝트 루트를 import 검색 경로로 설정
-
-  - Crawler 실행
-    - Working Directory 설정: ```cd "~/review_analysis/crawling"```
-    - 실행: ```python main.py -o ../../database --all```
-  
-  - Preprecessor 실행
-    - Working Directory 설정: ```cd "~/review_analysis/preprocessing"```
-    - 실행: ```python main.py --output_dir ..\..\database --all```
-
+  - Rotten Tomatoes: https://www.rottentomatoes.com/
+  - IMDb: https: https://www.imdb.com/
+  - LetterBoxd: https://letterboxd.com/
+ 
+- 데이터 형식: 수집된 데이터는 'date, rating, content' 항목에 대하여 csv 형식으로 저장되어 있습니다.
+- 데이터 개수: 각 사이트마다 약 500 ~ 600개의 데이터를 수집하였으며 총 1700개 이상의 리뷰 데이터를 수집하였습니다.
+  - Rotten Tomatoes: 610
+  - IMDb: 600개
+  - LetterBoxd: 500개
     
+
+- 실행 방법
+  1) 환경 설정 및 가상환경 활성화:
+     ```bash
+      # 가상환경 생성 및 활성화
+      python -m venv venv
+      source venv/bin/activate  # Mac/Linux
+      .\venv\Scripts\activate   # Windows
+      
+      # 의존성 라이브러리 설치
+      pip install -r requirements.txt
+
+  2) 프로젝트 루트로 이동
+     ```bash
+       cd YBIGTA_newbie_team_project
+
+  3) 크롤러 실행
+    ```bash
+       cd review_analysis/crawling
+       python main.py -o ../../database --all
+
+  4) 전처리 실행
+    ```bash
+      cd ../preprocessing
+      python main.py --output_dir ../../database --all
+
+
 ## 1. 개별 사이트 EDA
 
 ### 1.1 Rotten Tomato
@@ -242,10 +260,6 @@ IMDb: 감성 지수의 스펙트럼이 가장 넓습니다. 이는 장문의 분
 
 
 </br>
-
-
-
-
 
 
 
