@@ -40,4 +40,11 @@ jobs:
             docker stop my-container || true
             docker rm my-container || true
             docker pull ${{ secrets.DOCKER_USERNAME }}/ybigta_team_assignment:latest
-            docker run -d --name my-container -p 8000:8000 -e MYSQL_HOST=${{ secrets.AWS_DB_HOST }} -e MYSQL_PASSWORD=${{ secrets.AWS_DB_PASSWORD }} -e MYSQL_USER=${{ secrets.AWS_DB_USER }} -e MYSQL_DB=${{ secrets.AWS_DB_NAME }} -e MONGO_URL=${{ secrets.MONGO_URL }} ${{ secrets.DOCKER_USERNAME }}/ybigta_team_assignment:latest
+            docker run -d --name my-container \
+              -p 8000:8000 \
+              -e MYSQL_HOST="${{ secrets.AWS_DB_HOST }}" \
+              -e MYSQL_PASSWORD="${{ secrets.AWS_DB_PASSWORD }}" \
+              -e MYSQL_USER="${{ secrets.AWS_DB_USER }}" \
+              -e MYSQL_DB="${{ secrets.AWS_DB_NAME }}" \
+              -e MONGO_URL="${{ secrets.MONGO_URL }}" \
+              "${{ secrets.DOCKER_USERNAME }}/ybigta_team_assignment:latest"
