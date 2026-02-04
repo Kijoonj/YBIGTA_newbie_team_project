@@ -1,5 +1,12 @@
 </br>
 
+# [8회차] DB DOCKER AWS
+- Dockerhub 주소: https://hub.docker.com/repository/docker/jkijoon/ybigta_team_assignment
+
+- API ENDPOINTS
+
+- Github Action
+
 # [4회차] Crawling & EDA & FE 및 시각화 
 
 ## 0. 개요 및 실행방법
