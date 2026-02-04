@@ -5,4 +5,7 @@ env
 .env
 
 .git
-.gitignore
+
+.env
+.env.*
+*.pem
