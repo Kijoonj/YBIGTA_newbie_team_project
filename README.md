@@ -1,6 +1,6 @@
 </br>
 
-# [4회차] EDA & FE 및 시각화 
+# [4회차] Crawling & EDA & FE 및 시각화 
 
 ## 0. 개요 및 실행방법
 
@@ -159,10 +159,11 @@ IMDb 리뷰 데이터의 전반적인 특성과 이상치를 파악하기 위해
 
 * 이상치 처리
 
-    * 별점 0점 데이터 및 텍스트 길이가 극단적으로 짧거나 긴 리뷰를 제거하였습니다.
+    * 별점 범위 1~10 범위 밖의 데이터를 제거하였습니다.
 
 * 텍스트 데이터 전처리
 
+    * 극단적으로 짧거나 (-5 char)  긴 리뷰(3000- char)를 제거하였습니다.
 
 
 * 파생 변수 생성
@@ -205,8 +206,18 @@ IMDb: 감성 지수의 스펙트럼이 가장 넓습니다. 이는 장문의 분
 ![push rejected](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/github/push_rejected.png)
 
 * Review and Merged
+
+* 오상호
   
 ![review and merged](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/github/review_and_merged.png)
+
+* 황소현
+    
+![review and merged 황소현](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/github/review_and_merged_%ED%99%A9%EC%86%8C%ED%98%84.png)
+
+* 정기준
+    
+![review and merged 정기준](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/github/review_and_merged_%EC%A0%95%EA%B8%B0%EC%A4%80.png)
 
 
 ## 2. 팀 소개
@@ -238,6 +249,14 @@ IMDb: 감성 지수의 스펙트럼이 가장 넓습니다. 이는 장문의 분
 |1지망 팀| DS
 |MBTI| ISTP
 |취미| 음악듣기, 노래방가기
+
+
+------------------------------
+# Web 과제 실행법
+
+1. 디렉토리 이동: ```cd YBIGTA_newbie_team_project\app```
+2. 서버 실행 : ```uvicorn main:app --reload```
+3. 페이지 접속 : ```http://127.0.0.1:8000``` 을 통해 접속
 
 
 </br>
