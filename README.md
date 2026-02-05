@@ -4,6 +4,21 @@
 - Dockerhub 주소: https://hub.docker.com/repository/docker/jkijoon/ybigta_team_assignment
 
 - API ENDPOINTS
+1. preprocess
+![preprocess](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/aws/preprocess.png?raw=true) 
+
+2. register
+![register](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/aws/register.png?raw=true)
+
+3. login
+![login](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/aws/login.png?raw=true)
+
+4. update-password
+![update-password](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/aws/update-password.png?raw=true) 
+
+5. delete
+![delete](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/aws/delete.png?raw=true) 
+
 
 - Github Action
 ![github_action](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/aws/github_action.png?raw=true) 
