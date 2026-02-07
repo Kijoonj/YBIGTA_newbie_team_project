@@ -31,3 +31,11 @@ pymongo
 pymysql
 cryptography
 python-dotenv
+langchain
+langchain-core
+langchain-community
+langchain-upstage
+langgraph
+faiss-cpu
+streamlit
+tiktoken

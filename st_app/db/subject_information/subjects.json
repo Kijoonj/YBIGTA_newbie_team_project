@@ -1,0 +1,17 @@
+{
+  "갤럭시S24": {
+    "description": "삼성전자의 온디바이스 AI 탑재 스마트폰",
+    "price": "115만원부터",
+    "specs": "Exynos 2400 프로세서, 6.2인치 FHD+ 디스플레이, 4000mAh 배터리"
+  },
+  "아이폰15": {
+    "description": "다이내믹 아일랜드와 USB-C가 적용된 애플의 최신폰",
+    "price": "125만원부터",
+    "specs": "A16 Bionic 칩, 6.1인치 Super Retina XDR, 48MP 메인 카메라"
+  },
+  "픽셀8": {
+    "description": "구글의 AI 기능이 집약된 순정 안드로이드 폰",
+    "price": "90만원대 (해외구매)",
+    "specs": "Google Tensor G3, 6.2인치 Actua 디스플레이, VPN 내장"
+  }
+}
