@@ -61,18 +61,18 @@ raw_data = [
 ]
 
 def create_vector_db():
-    print("🚀 데이터 임베딩 시작...")
+    print("데이터 임베딩 시작...")
     
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    print(f"📍 현재 위치: {current_dir}")
+    print(f"현재 위치: {current_dir}")
     
     save_path = os.path.join(current_dir, "..", "db", "faiss_index")
     save_path = os.path.abspath(save_path)  # 절대 경로로 변환
     
-    print(f"💾 저장 경로: {save_path}")
+    print(f"저장 경로: {save_path}")
     
     os.makedirs(save_path, exist_ok=True)
-    print(f"✅ 폴더 생성 완료")
+    print(f"폴더 생성 완료")
     
     embedding_model = UpstageEmbeddings(model="solar-embedding-1-large")
     
@@ -80,7 +80,7 @@ def create_vector_db():
     
     vectorstore.save_local(save_path)
     
-    print(f"✅ 임베딩 완료! '{save_path}'에 저장되었습니다.")
+    print(f"임베딩 완료! '{save_path}'에 저장되었습니다.")
     
     meta_info = {
         "total_documents": len(raw_data),
@@ -93,13 +93,13 @@ def create_vector_db():
     with open(meta_path, 'w', encoding='utf-8') as f:
         json.dump(meta_info, f, ensure_ascii=False, indent=2)
     
-    print(f"📄 meta.json 생성 완료")
+    print(f"meta.json 생성 완료")
     
     if os.path.exists(save_path):
         files = os.listdir(save_path)
-        print(f"📂 저장된 파일 목록: {files}")
+        print(f"저장된 파일 목록: {files}")
     else:
-        print("❌ 경로가 존재하지 않습니다!")
+        print("경로가 존재하지 않습니다!")
 
 if __name__ == "__main__":
     create_vector_db()
