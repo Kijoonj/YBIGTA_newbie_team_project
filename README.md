@@ -1,5 +1,11 @@
 </br>
 
+#[9회차] RAG AGENT
+- stramlit cloud 주소:
+- 작동 화면
+![ragDemo](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/github/rag%20agent%20demo.png?raw=true)
+
+
 # [8회차] DB DOCKER AWS
 - Dockerhub 주소: https://hub.docker.com/repository/docker/jkijoon/ybigta_team_assignment
 
@@ -283,6 +289,7 @@ IMDb: 감성 지수의 스펙트럼이 가장 넓습니다. 이는 장문의 분
 
 
 </br>
+
 
 
 
