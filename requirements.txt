@@ -39,3 +39,4 @@ langgraph
 faiss-cpu
 streamlit
 tiktoken
+altair<5
