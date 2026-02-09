@@ -6,8 +6,13 @@
   
 - 작동 화면
 
-  
+
 ![ragDemo](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/github/rag%20agent%20demo.png?raw=true)
+
+- Pipeline
+
+
+![pipeline](https://github.com/Kijoonj/YBIGTA_newbie_team_project/blob/main/github/pipline.drawio.png?raw=true)
 
 
 # [8회차] DB DOCKER AWS
@@ -293,6 +298,7 @@ IMDb: 감성 지수의 스펙트럼이 가장 넓습니다. 이는 장문의 분
 
 
 </br>
+
 
 
 
