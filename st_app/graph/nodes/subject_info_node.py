@@ -1,42 +1,78 @@
 import json
 import os
+from langchain_upstage import ChatUpstage
 from langchain_core.messages import AIMessage
+from langchain_core.prompts import PromptTemplate
+
+# [1] LLM 설정
+def get_local_llm():
+    # temperature=0: 사실 기반 답변을 위해 창의성 최소화
+    return ChatUpstage(model="solar-pro", temperature=0)
+
+# [2] 프롬프트 개선 (데이터 포맷팅 반영 & 답변 양식 강제)
+INFO_PROMPT = """
+당신은 스마트폰 정보 안내 AI입니다.
+아래 [제품 스펙]을 참고하여 사용자의 질문에 답변하세요.
+
+**지시사항:**
+1. [제품 스펙]에 있는 내용만 사용하여 답변하세요.
+2. "가격"을 물어보면 숫자를 포함하여 정확히 답변하세요.
+3. 답변은 "출처" 같은 말로 시작하지 말고, 바로 결론부터 말하세요.
+4. 정보가 없으면 "해당 내용은 데이터에 없습니다."라고 하세요.
+
+[제품 스펙]
+{info}
+
+질문: {question}
+답변:
+"""
+
+# [3] 경로 설정
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+JSON_PATH = os.path.join(BASE_DIR, "../../db/subject_information/subjects.json")
 
 def subject_info_node(state):
-    """
-    subjects.json 파일에서 스마트폰의 공식 정보를 찾아 답변하는 노드.
-    """
-    print("---CALLING SUBJECT INFO NODE---")
+    print("\n--- 🟢 Subject Info Node 진입 ---")
     
-    # 1. 상태에서 분석된 대상(subject) 가져오기
-    target_subject = state.get("subject", "none")
+    question = state["messages"][-1].content
     
-    # 2. subjects.json 파일 읽기
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    base_dir = os.path.dirname(os.path.dirname(current_dir)) # st_app/ 까지 올라감
-    json_path = os.path.join(base_dir, "db", "subject_information", "subjects.json")
-    
+    # JSON 로드
     try:
-        with open(json_path, "r", encoding="utf-8") as f:
+        with open(JSON_PATH, "r", encoding="utf-8") as f:
             data = json.load(f)
-        
-        # 3. 해당 스마트폰 정보가 있는지 확인
-        if target_subject in data:
-            info = data[target_subject]
-            answer_text = (
-                f"문의하신 {target_subject}에 대한 공식 정보입니다.\n\n"
-                f"📱 설명: {info['description']}\n"
-                f"💰 가격: {info['price']}\n"
-                f"⚙️ 주요 스펙: {info['specs']}"
-            )
-        else:
-            answer_text = f"죄송합니다. {target_subject}에 대한 상세 정보를 찾을 수 없습니다."
-            
     except Exception as e:
-        answer_text = f"데이터를 읽는 중 오류가 발생했습니다: {str(e)}"
+        return {"messages": [AIMessage(content="데이터베이스 오류")]}
 
-    # 4. 답변을 메시지 형태로 추가하고, context도 업데이트
+    # 키워드 매칭
+    target_info = None
+    target_product = None
+    
+    normalized_question = question.replace(" ", "").lower()
+    
+    for product_name, info in data.items():
+        normalized_product = product_name.replace(" ", "").lower()
+        if normalized_product in normalized_question:
+            # [핵심 수정] 딕셔너리를 보기 좋은 텍스트로 변환 (Dict -> Formatted String)
+            # 예: "{'price': '100원'}" -> "- price: 100원"
+            target_info = "\n".join([f"- {key}: {value}" for key, value in info.items()])
+            target_product = product_name
+            break
+            
+    if not target_info:
+        return {"messages": [AIMessage(content="갤럭시S24, 아이폰15, 픽셀8 중에서 질문해주세요.")]}
+
+    print(f"✅ 제품 찾음: {target_product}")
+    print(f"📝 프롬프트 입력 데이터:\n{target_info}") # 터미널에서 데이터가 예쁘게 나오는지 확인!
+
+    # LLM 호출
+    llm = get_local_llm()
+    prompt_template = PromptTemplate.from_template(INFO_PROMPT)
+    chain = prompt_template | llm
+    
+    response = chain.invoke({"info": target_info, "question": question})
+    
     return {
-        "messages": [AIMessage(content=answer_text)],
-        "context": answer_text  # 나중에 참조할 수 있게 저장
+        "messages": [response], 
+        "answer": response.content,
+        "intent": "info"
     }
